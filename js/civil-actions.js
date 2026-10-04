@@ -1,0 +1,62 @@
+/* Executable contracts. Native duties/outcomes stay native; selected actions use these rules. */
+(function(G){'use strict';const X=G.CIVIL,W=G.WORLD,N=G.N,C=G.clamp;
+X.actions={};X.keys={};N.FOREIGN_KEYS=[...new Set([...N.FOREIGN_KEYS,...Object.keys(N.ACTIVITIES)])];
+X.define=(id,name,category,options)=>{const d={id,name,category,cooldown:3,duration:1,risk:0,actors:['character'],costs:{},target:'self',...options};
+ if(typeof d.check!=='function'||typeof d.run!=='function'||typeof d.priority!=='function')throw Error('Incomplete action contract '+id);
+ X.actions[id]=d;const key='civil_'+id.toLowerCase();X.keys[key]=id;N.ACTIVITIES[key]=name;if(!N.FOREIGN_KEYS.includes(key))N.FOREIGN_KEYS.push(key);
+ const r=G.ACTIONS[id],native=r?.supported;N.registerAction(id,name,category,'civil',{actors:d.actors,requirements:['alive','physical_presence','context_preconditions','cooldown','rule_validation'],targets:[d.target],duration:d.duration,risk:d.risk,costs:d.costs,outcomes:d.outcomes||['paid_state_transition','memories','reactions'],tags:[category,...d.tags||[]],hints:{context:true,goal:true,personality:true},execution:native?'native_and_contextual':'contextual',canonical:d.canonical||id});
+};
+X.target=p=>W.person(p.data?.person||p.target);
+X.make=(a,id,data={})=>({key:'civil_'+id.toLowerCase(),id,target:null,data,score:0,why:'ประเมินตามสถานะและสิทธิ์ของผู้กระทำ'});
+X.validate=(a,p,ignoreCooldown=false)=>{const d=X.actions[p.id],l=a&&X.life(a);if(!d||!l||!a||W.person(a.id)?.c!==a.c||W.health(a)<1||l.captive&&!d.allowCaptured||l.travel&&l.travel.phase!=='stay'&&!d.allowBusy)return false;
+ const active=(!l.travel||l.travel.phase==='stay')&&!l.study&&(!a.f?!a.c.mx.study&&(a.c.state==='home'||a.c.state==='civilTravel'&&l.travel?.phase==='stay')&&!(a.c.mx.busyUntil>G.S.day):true);
+ if(!active&&!d.allowBusy)return false;if(!ignoreCooldown&&(l.cooldowns[d.id]||0)>G.S.day)return false;
+ if(d.actors.includes('leader')&&!X.isLeader(a)||d.actors.includes('elder')&&X.rank(a)<3&&!X.isLeader(a))return false;
+ if(d.actors.includes('sect')&&!X.isLeader(a))return false;
+ const t=X.target(p);if((p.data?.person||p.target)&&(!t||!X.knows(a,t.id)))return false;
+ if(d.target==='near_person'&&(!t||!X.near(a,t)||t.id===a.id))return false;
+ if(t&&d.category==='sect'&&t.group!==a.group)return false;
+ if(d.target==='known_person'&&(!t||t.id===a.id))return false;
+ if(d.target==='group'&&(!X.activeGroup(p.data?.group)||!X.group(p.data?.group)||p.data.group===a.group))return false;
+ if(d.target==='site'&&!W.state().sites[p.data?.site])return false;
+ return !!d.check(a,p,t);
+};
+X.snapshot=a=>({wallet:a.b.wallet,health:W.health(a),fatigue:W.fatigue(a),satisfaction:X.sat(a),loyalty:X.loyalty(a),foundation:X.foundation(a),silver:X.balance(a.group,'silver'),food:X.balance(a.group,'food'),influence:X.life(a).influence,legitimacy:X.group(a.group).legitimacy});
+X.execute=(a,p)=>{if(!X.validate(a,p))return null;const t=X.target(p),d=X.actions[p.id],claims=N._claims?.[N._planningSlot];
+ if(t&&!a.f&&t.group===a.group&&claims?.has(t.id)&&d.target==='near_person')return null;
+ const sampled=X.state().training.enabled&&X.state().training.decisions%20===19,before=X.snapshot(a),features=sampled?X.features(a):null,alternatives=sampled?X.trainingOptions(a,p):null;const nested=X._capturingContext;let text;X._capturingContext=true;try{text=d.run(a,p,t)}finally{X._capturingContext=nested}if(!text)return null;
+ const after=X.snapshot(a),delta={};for(const k of Object.keys(before))if(Math.abs(after[k]-before[k])>1e-8)delta[k]=+(after[k]-before[k]).toFixed(5);
+ X.life(a).cooldowns[d.id]=G.S.day+d.cooldown;X.life(a).last=G.S.day;X.result(a,p.id,text,t?.id||null,delta);
+ if(t&&d.target==='near_person'&&t.group===a.group&&claims)claims.add(t.id);
+ X.captureDecision?.(a,p,before,after,delta,features,alternatives);
+ return text;
+};
+X.context=a=>{const peers=W.people().filter(t=>t.id!==a.id&&X.near(a,t)&&W.available(t)&&X.knows(a,t.id)),friend=peers.slice().sort((x,y)=>W.rel(a,y.id).trust-W.rel(a,x.id).trust)[0],rival=peers.filter(t=>W.rel(a,t.id).rivalry>20||W.rel(a,t.id).hatred>20).sort((x,y)=>W.rel(a,y.id).hatred-W.rel(a,x.id).hatred)[0],injured=peers.filter(t=>W.health(t)<85).sort((x,y)=>W.health(x)-W.health(y))[0];return {peers,friend,rival,injured,leader:X.leader(a.group),elder:peers.find(t=>X.rank(t)>=3),groups:X.knownGroups(a),sites:Object.keys(W.state().sites).filter(id=>a.f?W.siteKnown(a,id):G.S.discovered[id])};};
+X.candidates=a=>{W.needs(a);if(X._planningCache?.has(a.id))return X._planningCache.get(a.id).map(p=>({...p,score:p.score-(!a.f&&N._dayKeys.includes(p.key)?50:0)})).sort((x,y)=>y.score-x.score||x.id.localeCompare(y.id));const ctx=X.context(a),out=[];for(const d of Object.values(X.actions)){
+ if(d.actors.includes('sect')||d.actors.includes('leader')||d.actors.includes('elder')){if(!X.isLeader(a)&&(!d.actors.includes('elder')||X.rank(a)<3))continue;}
+ const preliminary=d.priority(a,{data:{}},ctx);if(!Number.isFinite(preliminary)||preliminary<=0)continue;
+ const data=d.choose?d.choose(a,ctx):{};if(data===null)continue;const p=X.make(a,d.id,data);
+ const base=d.priority(a,p,ctx);if(!Number.isFinite(base)||base<=0||!X.validate(a,p))continue;
+ let score=base;const recent=a.b.trace.slice(0,6).filter(t=>t.action===d.id).length;score-=recent*9;
+ if(!X._planningCache&&!a.f&&N._dayKeys.includes(p.key))score-=50;
+ p.score=score;p.why=d.reason||d.name+' • ตรวจความต้องการ เป้าหมาย ทุน และผู้เกี่ยวข้องแล้ว';out.push(W.score(a,p));
+ }const ranked=out.sort((x,y)=>y.score-x.score||x.id.localeCompare(y.id)).slice(0,W.state().quality==='DEEP'?24:12);if(X._planningCache){X._planningCache.set(a.id,ranked);return ranked.map(p=>({...p,score:p.score-(!a.f&&N._dayKeys.includes(p.key)?50:0)})).sort((x,y)=>y.score-x.score||x.id.localeCompare(y.id));}return ranked;
+};
+const validate=W.validateAction;W.validateAction=(a,p)=>X.keys[p.key]?X.validate(a,p):(Object.hasOwn(N.ACTIVITIES,p.key)||['foreign_recover','foreign_train'].includes(p.key))&&validate(a,p);
+const execute=W.execute;W.execute=(a,p)=>X.keys[p.key]?X.execute(a,p):execute(a,p);
+const extra=W.extraKey;W.extraKey=key=>!!X.keys[key]||extra(key);
+const perform=N.performExtra;N.performExtra=(c,p)=>{if(!X.keys[p.key])return perform(c,p);const a=W.person(c.id),before={wallet:a.b.wallet},text=X.execute(a,p);W.trace(a,p,!!text,before);if(!text)return false;
+ // X.result already owns canonical counters; write the native schedule without counting twice.
+ const l=c.mx.life;l.history.unshift({day:G.S.day,key:p.key,text:N.ACTIVITIES[p.key],why:p.why,detail:text,target:p.data?.person||null,changes:{wallet:+(a.b.wallet-before.wallet).toFixed(5)},slot:N._planningSlot});l.history=l.history.slice(0,128);l.counts[p.key]=(l.counts[p.key]||0)+1;l.monthCounts[p.key]=(l.monthCounts[p.key]||0)+1;l.lastDay=G.S.day;G.S.patch.worldLife.actions++;return true;
+};
+const build=N.buildAgendas;N.buildAgendas=()=>{X._planningCache=new Map();try{return build()}finally{X._planningCache=null}};
+const plan=N.planCandidates;N.planCandidates=(c,local)=>{const old=plan(c,local),a=W.person(c.id);if(!a||!a.b.civil)return old;const xs=X.candidates(a);W.state().metrics.candidates+=xs.length;return [...old,...xs].sort((x,y)=>y.score-x.score||x.key.localeCompare(y.key))};
+const candidates=W.candidates;W.candidates=a=>[...candidates(a),...X.candidates(a)].sort((x,y)=>y.score-x.score||x.key.localeCompare(y.key));
+// Register outcome/event contracts as outcomes, never as independently selectable actions.
+X.event=(id,name,category)=>N.registerAction(id,name,category,'event',{actors:['world'],requirements:['actual_cause'],targets:['character','sect'],duration:0,execution:'outcome',canonical:id});
+X.toTarget=t=>t?{person:t.id}:null;
+X.bond=(a,t,delta,reverse=delta)=>{W.relate(a,t.id,delta);W.relate(t,a.id,reverse)};
+X.discipline=a=>W.attr(a,'dis');
+X.job=a=>a.f?'foreign':a.c.job;
+X.setQi=(a,n)=>{X.life(a).qi=C(n,0,100);if(!a.f)a.c.mx.mana=C(a.c.mx.mana+n*.01,0,N.maxMana(a.c))};
+})(window.G);
