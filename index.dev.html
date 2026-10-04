@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12181a">
+<title>ตำนานสำนักเมฆาสงบ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="top"></header>
+  <main id="view"><div class="card"><h3>กำลังเปิดตำนานสำนักเมฆาสงบ…</h3><p>หากข้อความนี้ค้างอยู่ ให้เปิดไฟล์ด้วยเบราว์เซอร์ที่อนุญาต JavaScript เช่น Chrome แทนหน้าดูตัวอย่างไฟล์</p></div></main>
+  <div id="advbar"></div>
+  <nav id="tabs"></nav>
+</div>
+<div id="modal" class="hide"></div>
+<div id="toast" class="hide"></div>
+<noscript><p style="padding:16px">เกมต้องใช้ JavaScript กรุณาเปิดด้วย Chrome และอนุญาต JavaScript ก่อนเล่น</p></noscript>
+<script>
+window.addEventListener('error', function (e) {
+  var v = document.getElementById('view');
+  if (!window.G || !G.S) v.textContent = 'เปิดเกมไม่สำเร็จ: ' + (e.message || 'โหลดไฟล์เกมไม่ได้') + ' กรุณาใช้ index.html ฉบับรวมไฟล์และเปิดด้วย Chrome';
+});
+</script>
+<script src="js/data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/sim.js"></script>
+<script src="js/world.js"></script>
+<script src="js/actions.js"></script>
+<script src="js/content-sanmakra.js"></script>
+<script src="js/patch-core.js"></script>
+<script src="js/patch-items.js"></script>
+<script src="js/patch-arts.js"></script>
+<script src="js/patch-stories.js"></script>
+<script src="js/patch-lives.js"></script>
+<script src="js/patch-validation.js"></script>
+<script src="js/patch-parity.js"></script>
+<script src="js/parity-validation.js"></script>
+<script src="js/living-world.js"></script>
+<script src="js/living-validation.js"></script>
+<script src="js/living-deep.js"></script>
+<script src="js/apprenticeship.js"></script>
+<script src="js/action-registry.js"></script>
+<script src="js/world-brain.js"></script>
+<script src="js/world-consequences.js"></script>
+<script src="js/world-integration.js"></script>
+<script src="js/world-territory.js"></script>
+<script src="js/world-history.js"></script>
+<script src="js/world-validation.js"></script>
+<script src="js/world-storage.js"></script>
+<script src="js/civil-core.js"></script>
+<script src="js/civil-actions.js"></script>
+<script src="js/civil-life.js"></script>
+<script src="js/civil-economy.js"></script>
+<script src="js/civil-sect.js"></script>
+<script src="js/civil-politics.js"></script>
+<script src="js/civil-world.js"></script>
+<script src="js/civil-personal.js"></script>
+<script src="js/civil-simulation.js"></script>
+<script src="js/civil-validation.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/ui2.js"></script>
+<script src="js/patch-ui.js"></script>
+<script src="js/parity-ui.js"></script>
+<script src="js/living-ui.js"></script>
+<script src="js/living-deep-ui.js"></script>
+<script src="js/apprenticeship-ui.js"></script>
+<script src="js/world-ui.js"></script>
+<script src="js/civil-ui.js"></script>
+<script>
+try { G.UI.boot(); }
+catch (e) {
+  document.getElementById('view').textContent = 'เปิดเกมไม่สำเร็จ: ' + e.message + ' กรุณาเปิดไฟล์ด้วย Chrome';
+  console.error(e);
+}
+</script>
+</body>
+</html>
