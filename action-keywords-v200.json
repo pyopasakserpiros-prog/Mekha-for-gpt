@@ -1,0 +1,6446 @@
+{
+  "version": "2.0.0",
+  "runtimeSource": "js/action-registry.js plus registered integration handlers",
+  "selectability": "supported does not imply every actor can execute an action; actual validators and event-only/native handlers are authoritative",
+  "records": [
+    {
+      "id": "AMBUSH",
+      "name": "การต่อสู้ · AMBUSH",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ASSASSINATE",
+      "name": "การต่อสู้ · ASSASSINATE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ATTACK",
+      "name": "การต่อสู้ · ATTACK",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ATTACK_SECT",
+      "name": "การต่อสู้ · ATTACK_SECT",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "CAPTURE",
+      "name": "การต่อสู้ · CAPTURE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "CAPTURE_RESOURCE_SITE",
+      "name": "ยึดแหล่งทรัพยากร",
+      "category": "combat",
+      "description": "ยึดแหล่งทรัพยากร",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "available_squad",
+        "known_location",
+        "supplies",
+        "battle_result"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 25,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "territory"
+    },
+    {
+      "id": "CHASE",
+      "name": "การต่อสู้ · CHASE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DEFEND",
+      "name": "การต่อสู้ · DEFEND",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DEFEND_RESOURCE_SITE",
+      "name": "การต่อสู้ · DEFEND_RESOURCE_SITE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DEFEND_SECT",
+      "name": "สร้างแนวป้องกัน",
+      "category": "combat",
+      "description": "สร้างแนวป้องกัน",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "DUEL_TO_DEATH",
+      "name": "การต่อสู้ · DUEL_TO_DEATH",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "EXECUTE",
+      "name": "การต่อสู้ · EXECUTE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "LOSE_DUEL",
+      "name": "พ่ายประลอง",
+      "category": "combat",
+      "description": "พ่ายประลอง",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "PROTECT",
+      "name": "การต่อสู้ · PROTECT",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "RAID",
+      "name": "การต่อสู้ · RAID",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "RESCUE",
+      "name": "การต่อสู้ · RESCUE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "RETREAT",
+      "name": "การต่อสู้ · RETREAT",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SABOTAGE",
+      "name": "การต่อสู้ · SABOTAGE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SIEGE",
+      "name": "การต่อสู้ · SIEGE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SPARE",
+      "name": "การต่อสู้ · SPARE",
+      "category": "combat",
+      "description": "คำศัพท์สำหรับระบบ การต่อสู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "WIN_DUEL",
+      "name": "ชนะประลอง",
+      "category": "combat",
+      "description": "ชนะประลอง",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "ABSORB_SPIRIT_ENERGY",
+      "name": "บ่มเพาะ · ABSORB_SPIRIT_ENERGY",
+      "category": "cultivation",
+      "description": "คำศัพท์สำหรับระบบ บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "BREAKTHROUGH_ATTEMPT",
+      "name": "ทะลวงขอบเขต",
+      "category": "cultivation",
+      "description": "ทะลวงขอบเขต",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "CULTIVATE",
+      "name": "บ่มเพาะตามหน้าที่",
+      "category": "cultivation",
+      "description": "บ่มเพาะตามหน้าที่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "native_cultivation"
+    },
+    {
+      "id": "CULTIVATION_EXCHANGE",
+      "name": "ฝึกกับอาจารย์",
+      "category": "cultivation",
+      "description": "ฝึกกับอาจารย์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "master_session"
+    },
+    {
+      "id": "GUIDE_JUNIOR_CULTIVATION",
+      "name": "ชี้แนะศิษย์น้อง",
+      "category": "cultivation",
+      "description": "ชี้แนะศิษย์น้อง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "mentor"
+    },
+    {
+      "id": "HEAL_INTERNAL_INJURY",
+      "name": "บ่มเพาะ · HEAL_INTERNAL_INJURY",
+      "category": "cultivation",
+      "description": "คำศัพท์สำหรับระบบ บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "MEDITATE",
+      "name": "นั่งสมาธิและสวด",
+      "category": "cultivation",
+      "description": "นั่งสมาธิและสวด",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "pray"
+    },
+    {
+      "id": "PREPARE_BREAKTHROUGH",
+      "name": "เสริมฐานรากก่อนทะลวง",
+      "category": "cultivation",
+      "description": "เสริมฐานรากก่อนทะลวง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "prepare_realm"
+    },
+    {
+      "id": "PURIFY_QI",
+      "name": "ดูดาวครุ่นคิด",
+      "category": "cultivation",
+      "description": "ดูดาวครุ่นคิด",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "stargaze"
+    },
+    {
+      "id": "REFINE_QI",
+      "name": "บ่มเพาะ · REFINE_QI",
+      "category": "cultivation",
+      "description": "คำศัพท์สำหรับระบบ บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SECLUDED_CULTIVATION",
+      "name": "ฝึกวิชาลับส่วนตัว",
+      "category": "cultivation",
+      "description": "ฝึกวิชาลับส่วนตัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "secret"
+    },
+    {
+      "id": "SEEK_BREAKTHROUGH_RESOURCE",
+      "name": "บ่มเพาะ · SEEK_BREAKTHROUGH_RESOURCE",
+      "category": "cultivation",
+      "description": "คำศัพท์สำหรับระบบ บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "STABILIZE_REALM",
+      "name": "บ่มเพาะ · STABILIZE_REALM",
+      "category": "cultivation",
+      "description": "คำศัพท์สำหรับระบบ บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "STUDY_CULTIVATION_MANUAL",
+      "name": "บ่มเพาะ · STUDY_CULTIVATION_MANUAL",
+      "category": "cultivation",
+      "description": "คำศัพท์สำหรับระบบ บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SUPPRESS_DEVIATION",
+      "name": "บ่มเพาะ · SUPPRESS_DEVIATION",
+      "category": "cultivation",
+      "description": "คำศัพท์สำหรับระบบ บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "USE_CULTIVATION_PILL",
+      "name": "บ่มเพาะ · USE_CULTIVATION_PILL",
+      "category": "cultivation",
+      "description": "คำศัพท์สำหรับระบบ บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "BARTER",
+      "name": "เศรษฐกิจ · BARTER",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "BORROW_MONEY",
+      "name": "เศรษฐกิจ · BORROW_MONEY",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "BUY_ITEM",
+      "name": "ซื้อโอสถด้วยเงินเก็บ",
+      "category": "economy",
+      "description": "ซื้อโอสถด้วยเงินเก็บ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "wallet": "validated"
+      },
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "buy_personal"
+    },
+    {
+      "id": "BUY_RESOURCES",
+      "name": "ซื้อเสบียงตามความขาดแคลน",
+      "category": "economy",
+      "description": "ซื้อเสบียงตามความขาดแคลน",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "CRAFT",
+      "name": "เศรษฐกิจ · CRAFT",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DISTRIBUTE_RESOURCES",
+      "name": "เศรษฐกิจ · DISTRIBUTE_RESOURCES",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DONATE_RESOURCES",
+      "name": "รับทุนหรือทรัพยากรเพิ่มเติม",
+      "category": "economy",
+      "description": "รับทุนหรือทรัพยากรเพิ่มเติม",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "EARN_MONEY",
+      "name": "รับงานแลกเบี้ยเลี้ยง",
+      "category": "economy",
+      "description": "รับงานแลกเบี้ยเลี้ยง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "earn_money"
+    },
+    {
+      "id": "FORGE_WEAPON",
+      "name": "เศรษฐกิจ · FORGE_WEAPON",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "GATHER_HERBS",
+      "name": "ดูแลแปลงส่วนตัว",
+      "category": "economy",
+      "description": "ดูแลแปลงส่วนตัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "garden"
+    },
+    {
+      "id": "HARVEST_RESOURCE",
+      "name": "ช่วยสะสมเสบียง",
+      "category": "economy",
+      "description": "ช่วยสะสมเสบียง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "supply"
+    },
+    {
+      "id": "INVEST",
+      "name": "ลงทุนการผลิต",
+      "category": "economy",
+      "description": "ลงทุนการผลิต",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "LEND_MONEY",
+      "name": "เศรษฐกิจ · LEND_MONEY",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "LOOT",
+      "name": "เศรษฐกิจ · LOOT",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "MANAGE_SHOP",
+      "name": "เศรษฐกิจ · MANAGE_SHOP",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "MINE_ORE",
+      "name": "เศรษฐกิจ · MINE_ORE",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "REFINE_PILL",
+      "name": "เศรษฐกิจ · REFINE_PILL",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "REPAIR_EQUIPMENT",
+      "name": "ดูแลอุปกรณ์",
+      "category": "economy",
+      "description": "ดูแลอุปกรณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "maintain"
+    },
+    {
+      "id": "ROB",
+      "name": "เศรษฐกิจ · ROB",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SAVE_MONEY",
+      "name": "พักและวางแผนเงินเก็บ",
+      "category": "economy",
+      "description": "พักและวางแผนเงินเก็บ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "save_money"
+    },
+    {
+      "id": "SEEK_BETTER_WEAPON",
+      "name": "ขอซื้ออุปกรณ์ที่เหมาะกับตน",
+      "category": "economy",
+      "description": "ขอซื้ออุปกรณ์ที่เหมาะกับตน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "wallet": "validated"
+      },
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "seek_weapon"
+    },
+    {
+      "id": "SELL_ITEM",
+      "name": "เศรษฐกิจ · SELL_ITEM",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SMUGGLE",
+      "name": "เศรษฐกิจ · SMUGGLE",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "STEAL",
+      "name": "เศรษฐกิจ · STEAL",
+      "category": "economy",
+      "description": "คำศัพท์สำหรับระบบ เศรษฐกิจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "TRADE",
+      "name": "แลกเปลี่ยนทรัพยากร",
+      "category": "economy",
+      "description": "แลกเปลี่ยนทรัพยากร",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "WORK",
+      "name": "ปฏิบัติหน้าที่ประจำ",
+      "category": "economy",
+      "description": "ปฏิบัติหน้าที่ประจำ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "native_work"
+    },
+    {
+      "id": "CARE_FOR_INJURED",
+      "name": "อาจารย์ดูแลศิษย์",
+      "category": "health",
+      "description": "อาจารย์ดูแลศิษย์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "master_care"
+    },
+    {
+      "id": "DETOXIFY",
+      "name": "สุขภาพ · DETOXIFY",
+      "category": "health",
+      "description": "คำศัพท์สำหรับระบบ สุขภาพ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "RECOVER",
+      "name": "พักฟื้นส่วนตัว",
+      "category": "health",
+      "description": "พักฟื้นส่วนตัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "recover"
+    },
+    {
+      "id": "REST",
+      "name": "พักรักษาตามหน้าที่",
+      "category": "health",
+      "description": "พักรักษาตามหน้าที่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "native_rest"
+    },
+    {
+      "id": "RESTORE_QI",
+      "name": "สุขภาพ · RESTORE_QI",
+      "category": "health",
+      "description": "คำศัพท์สำหรับระบบ สุขภาพ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SEEK_DOCTOR",
+      "name": "สุขภาพ · SEEK_DOCTOR",
+      "category": "health",
+      "description": "คำศัพท์สำหรับระบบ สุขภาพ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "TAKE_MEDICINE",
+      "name": "ใช้โอสถจริง",
+      "category": "health",
+      "description": "ใช้โอสถจริง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "TREAT_POISON",
+      "name": "สุขภาพ · TREAT_POISON",
+      "category": "health",
+      "description": "คำศัพท์สำหรับระบบ สุขภาพ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "TREAT_WOUND",
+      "name": "สุขภาพ · TREAT_WOUND",
+      "category": "health",
+      "description": "คำศัพท์สำหรับระบบ สุขภาพ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "VISIT_PHYSICIAN",
+      "name": "สุขภาพ · VISIT_PHYSICIAN",
+      "category": "health",
+      "description": "คำศัพท์สำหรับระบบ สุขภาพ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ASK_ABOUT_LOCATION",
+      "name": "ความรู้ · ASK_ABOUT_LOCATION",
+      "category": "knowledge",
+      "description": "คำศัพท์สำหรับระบบ ความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ASK_ABOUT_PERSON",
+      "name": "ความรู้ · ASK_ABOUT_PERSON",
+      "category": "knowledge",
+      "description": "คำศัพท์สำหรับระบบ ความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "HIDE_INFORMATION",
+      "name": "ความรู้ · HIDE_INFORMATION",
+      "category": "knowledge",
+      "description": "คำศัพท์สำหรับระบบ ความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "INVESTIGATE",
+      "name": "ความรู้ · INVESTIGATE",
+      "category": "knowledge",
+      "description": "คำศัพท์สำหรับระบบ ความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "LEARN_RUMOR",
+      "name": "ได้รับเบาะแส",
+      "category": "knowledge",
+      "description": "ได้รับเบาะแส",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "READ",
+      "name": "อ่านตำรับในหอวิชา",
+      "category": "knowledge",
+      "description": "อ่านตำรับในหอวิชา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "read"
+    },
+    {
+      "id": "RESEARCH",
+      "name": "ทดลองงานช่าง",
+      "category": "knowledge",
+      "description": "ทดลองงานช่าง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "research"
+    },
+    {
+      "id": "SEEK_INFORMATION",
+      "name": "ความรู้ · SEEK_INFORMATION",
+      "category": "knowledge",
+      "description": "คำศัพท์สำหรับระบบ ความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SHARE_INFORMATION",
+      "name": "เล่าข่าวที่ตนรู้ให้สหาย",
+      "category": "knowledge",
+      "description": "เล่าข่าวที่ตนรู้ให้สหาย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "share_news"
+    },
+    {
+      "id": "SPY_ON_TARGET",
+      "name": "ความรู้ · SPY_ON_TARGET",
+      "category": "knowledge",
+      "description": "คำศัพท์สำหรับระบบ ความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "STUDY",
+      "name": "เขียนบันทึกชีวิต",
+      "category": "knowledge",
+      "description": "เขียนบันทึกชีวิต",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "journal"
+    },
+    {
+      "id": "TEACH",
+      "name": "ความรู้ · TEACH",
+      "category": "knowledge",
+      "description": "คำศัพท์สำหรับระบบ ความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "VERIFY_INFORMATION",
+      "name": "ตรวจสอบข่าวกับพยาน",
+      "category": "knowledge",
+      "description": "ตรวจสอบข่าวกับพยาน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "verify_news"
+    },
+    {
+      "id": "WRITE_RECORD",
+      "name": "จดบันทึกวิชา",
+      "category": "knowledge",
+      "description": "จดบันทึกวิชา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "write"
+    },
+    {
+      "id": "ATTEND_EVENT",
+      "name": "สังสรรค์ยามค่ำ",
+      "category": "life",
+      "description": "สังสรรค์ยามค่ำ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "feast"
+    },
+    {
+      "id": "CARE_FOR_FAMILY",
+      "name": "ชีวิตประจำวัน · CARE_FOR_FAMILY",
+      "category": "life",
+      "description": "คำศัพท์สำหรับระบบ ชีวิตประจำวัน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DRINK",
+      "name": "ชีวิตประจำวัน · DRINK",
+      "category": "life",
+      "description": "คำศัพท์สำหรับระบบ ชีวิตประจำวัน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "EAT",
+      "name": "ปรุงอาหารส่วนตัว",
+      "category": "life",
+      "description": "ปรุงอาหารส่วนตัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "cook"
+    },
+    {
+      "id": "MANAGE_HOME",
+      "name": "จัดของและที่พัก",
+      "category": "life",
+      "description": "จัดของและที่พัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "tidy"
+    },
+    {
+      "id": "PURSUE_HOBBY",
+      "name": "ชีวิตประจำวัน · PURSUE_HOBBY",
+      "category": "life",
+      "description": "คำศัพท์สำหรับระบบ ชีวิตประจำวัน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "RELAX",
+      "name": "พักชมทิวทัศน์",
+      "category": "life",
+      "description": "พักชมทิวทัศน์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "outing"
+    },
+    {
+      "id": "SLEEP",
+      "name": "งีบพักระหว่างวัน",
+      "category": "life",
+      "description": "งีบพักระหว่างวัน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "nap"
+    },
+    {
+      "id": "VISIT_MARKET",
+      "name": "ไปตลาดชุมชน",
+      "category": "life",
+      "description": "ไปตลาดชุมชน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "market"
+    },
+    {
+      "id": "WANDER",
+      "name": "ชีวิตประจำวัน · WANDER",
+      "category": "life",
+      "description": "คำศัพท์สำหรับระบบ ชีวิตประจำวัน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "CHALLENGE",
+      "name": "ท้าประลองคู่ปรับ",
+      "category": "martial",
+      "description": "ท้าประลองคู่ปรับ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 12,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "challenge_rival"
+    },
+    {
+      "id": "COMPREHEND_TECHNIQUE",
+      "name": "วรยุทธ์ · COMPREHEND_TECHNIQUE",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "CREATE_TECHNIQUE",
+      "name": "วรยุทธ์ · CREATE_TECHNIQUE",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DUEL",
+      "name": "วรยุทธ์ · DUEL",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "IMITATE_TECHNIQUE",
+      "name": "วรยุทธ์ · IMITATE_TECHNIQUE",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "IMPROVE_TECHNIQUE",
+      "name": "วรยุทธ์ · IMPROVE_TECHNIQUE",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "OBSERVE_EXPERT",
+      "name": "ดูการประลอง",
+      "category": "martial",
+      "description": "ดูการประลอง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "spectate"
+    },
+    {
+      "id": "PRACTICE_FIST",
+      "name": "วรยุทธ์ · PRACTICE_FIST",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PRACTICE_FORMATION",
+      "name": "วรยุทธ์ · PRACTICE_FORMATION",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PRACTICE_HIDDEN_WEAPON",
+      "name": "วรยุทธ์ · PRACTICE_HIDDEN_WEAPON",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PRACTICE_PALM",
+      "name": "วรยุทธ์ · PRACTICE_PALM",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PRACTICE_QINGGONG",
+      "name": "วรยุทธ์ · PRACTICE_QINGGONG",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PRACTICE_SABER",
+      "name": "วรยุทธ์ · PRACTICE_SABER",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PRACTICE_SPEAR",
+      "name": "วรยุทธ์ · PRACTICE_SPEAR",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PRACTICE_SWORD",
+      "name": "วรยุทธ์ · PRACTICE_SWORD",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "REQUEST_GUIDANCE",
+      "name": "ปรึกษาผู้รู้",
+      "category": "martial",
+      "description": "ปรึกษาผู้รู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "consult"
+    },
+    {
+      "id": "SEEK_MASTER",
+      "name": "วรยุทธ์ · SEEK_MASTER",
+      "category": "martial",
+      "description": "คำศัพท์สำหรับระบบ วรยุทธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SPAR",
+      "name": "ประลองฝึกฝีมือ",
+      "category": "martial",
+      "description": "ประลองฝึกฝีมือ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "spar"
+    },
+    {
+      "id": "STUDY_TECHNIQUE",
+      "name": "วางแผนเรียนวิชา",
+      "category": "martial",
+      "description": "วางแผนเรียนวิชา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "learn"
+    },
+    {
+      "id": "TEACH_TECHNIQUE",
+      "name": "สอนนอกเวลา",
+      "category": "martial",
+      "description": "สอนนอกเวลา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "extra_teach"
+    },
+    {
+      "id": "TRAIN_MARTIAL_ART",
+      "name": "ฝึกวิชาใช้งาน",
+      "category": "martial",
+      "description": "ฝึกวิชาใช้งาน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "practice"
+    },
+    {
+      "id": "ABANDON_GOAL",
+      "name": "ละวางเป้าหมาย",
+      "category": "personal",
+      "description": "ละวางเป้าหมาย",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "BECOME_JEALOUS",
+      "name": "เกิดความริษยา",
+      "category": "personal",
+      "description": "เกิดความริษยา",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "BECOME_SUSPICIOUS",
+      "name": "เป้าหมายและอารมณ์ · BECOME_SUSPICIOUS",
+      "category": "personal",
+      "description": "คำศัพท์สำหรับระบบ เป้าหมายและอารมณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "CELEBRATE",
+      "name": "เป้าหมายและอารมณ์ · CELEBRATE",
+      "category": "personal",
+      "description": "คำศัพท์สำหรับระบบ เป้าหมายและอารมณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "COMPLETE_GOAL",
+      "name": "บรรลุเป้าหมาย",
+      "category": "personal",
+      "description": "บรรลุเป้าหมาย",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "FAIL_GOAL",
+      "name": "พลาดเป้าหมาย",
+      "category": "personal",
+      "description": "พลาดเป้าหมาย",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "FORGIVE",
+      "name": "คลายความแค้นจากการคืนดี",
+      "category": "personal",
+      "description": "คลายความแค้นจากการคืนดี",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "forgive"
+    },
+    {
+      "id": "GAIN_CONFIDENCE",
+      "name": "เป้าหมายและอารมณ์ · GAIN_CONFIDENCE",
+      "category": "personal",
+      "description": "คำศัพท์สำหรับระบบ เป้าหมายและอารมณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "GIVE_UP_REVENGE",
+      "name": "เป้าหมายและอารมณ์ · GIVE_UP_REVENGE",
+      "category": "personal",
+      "description": "คำศัพท์สำหรับระบบ เป้าหมายและอารมณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "HOLD_GRUDGE",
+      "name": "เป้าหมายและอารมณ์ · HOLD_GRUDGE",
+      "category": "personal",
+      "description": "คำศัพท์สำหรับระบบ เป้าหมายและอารมณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "LOSE_CONFIDENCE",
+      "name": "เป้าหมายและอารมณ์ · LOSE_CONFIDENCE",
+      "category": "personal",
+      "description": "คำศัพท์สำหรับระบบ เป้าหมายและอารมณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "MOURN",
+      "name": "สูญเสียคนที่ผูกพัน",
+      "category": "personal",
+      "description": "สูญเสียคนที่ผูกพัน",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "REFLECT",
+      "name": "ทบทวนฐานราก",
+      "category": "personal",
+      "description": "ทบทวนฐานราก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "reflect"
+    },
+    {
+      "id": "SEEK_REDEMPTION",
+      "name": "เป้าหมายและอารมณ์ · SEEK_REDEMPTION",
+      "category": "personal",
+      "description": "คำศัพท์สำหรับระบบ เป้าหมายและอารมณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SEEK_REVENGE",
+      "name": "เป้าหมายและอารมณ์ · SEEK_REVENGE",
+      "category": "personal",
+      "description": "คำศัพท์สำหรับระบบ เป้าหมายและอารมณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SET_GOAL",
+      "name": "ตั้งเป้าหมาย",
+      "category": "personal",
+      "description": "ตั้งเป้าหมาย",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "BREAK_ALLIANCE",
+      "name": "การเมือง · BREAK_ALLIANCE",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "BRIBE",
+      "name": "การเมือง · BRIBE",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "CLAIM_TERRITORY",
+      "name": "ตั้งกำลังควบคุมพื้นที่",
+      "category": "politics",
+      "description": "ตั้งกำลังควบคุมพื้นที่",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "known_location",
+        "funds",
+        "force",
+        "diplomatic_permission"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 50,
+        "food": 5
+      },
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "territory"
+    },
+    {
+      "id": "CONTEST_TERRITORY",
+      "name": "การเมือง · CONTEST_TERRITORY",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "COUNTER_SPY",
+      "name": "การเมือง · COUNTER_SPY",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DECLARE_HOSTILITY",
+      "name": "การเมือง · DECLARE_HOSTILITY",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DECLARE_WAR",
+      "name": "ประกาศสงคราม",
+      "category": "politics",
+      "description": "ประกาศสงคราม",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "DEMAND_TRIBUTE",
+      "name": "การเมือง · DEMAND_TRIBUTE",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "FORM_ALLIANCE",
+      "name": "เปิดสัมพันธ์การค้า",
+      "category": "politics",
+      "description": "เปิดสัมพันธ์การค้า",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "MEDDLE",
+      "name": "การเมือง · MEDDLE",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "NEGOTIATE",
+      "name": "ไกล่เกลี่ยข้อขัดแย้ง",
+      "category": "politics",
+      "description": "ไกล่เกลี่ยข้อขัดแย้ง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "mediate"
+    },
+    {
+      "id": "OFFER_TRIBUTE",
+      "name": "การเมือง · OFFER_TRIBUTE",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SEEK_PEACE",
+      "name": "แสวงหาสงบศึก",
+      "category": "politics",
+      "description": "แสวงหาสงบศึก",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "SEND_ENVOY",
+      "name": "การเมือง · SEND_ENVOY",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SPY",
+      "name": "การเมือง · SPY",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SUPPORT_FACTION",
+      "name": "การเมือง · SUPPORT_FACTION",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "THREATEN",
+      "name": "การเมือง · THREATEN",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "UNDERMINE_FACTION",
+      "name": "การเมือง · UNDERMINE_FACTION",
+      "category": "politics",
+      "description": "คำศัพท์สำหรับระบบ การเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ASSIGN_MISSION",
+      "name": "กิจการสำนัก · ASSIGN_MISSION",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "BUILD_FACILITY",
+      "name": "กิจการสำนัก · BUILD_FACILITY",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "CHANGE_POLICY",
+      "name": "เปลี่ยนแนวทางสำนัก",
+      "category": "sect",
+      "description": "เปลี่ยนแนวทางสำนัก",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "DEMOTE_MEMBER",
+      "name": "ลดตำแหน่ง",
+      "category": "sect",
+      "description": "ลดตำแหน่ง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "DISCUSS_POLICY",
+      "name": "กิจการสำนัก · DISCUSS_POLICY",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DISTRIBUTE_EQUIPMENT",
+      "name": "กิจการสำนัก · DISTRIBUTE_EQUIPMENT",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "DISTRIBUTE_MEDICINE",
+      "name": "จัดโอสถรักษาผู้บาดเจ็บ",
+      "category": "sect",
+      "description": "จัดโอสถรักษาผู้บาดเจ็บ",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "EXPAND_SECT",
+      "name": "กิจการสำนัก · EXPAND_SECT",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "FORM_INTERNAL_FACTION",
+      "name": "กิจการสำนัก · FORM_INTERNAL_FACTION",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "HOLD_MEETING",
+      "name": "ประชุมงานฝ่าย",
+      "category": "sect",
+      "description": "ประชุมงานฝ่าย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "govern"
+    },
+    {
+      "id": "IMPROVE_LIBRARY",
+      "name": "ลงทุนการถ่ายทอดของฝ่าย",
+      "category": "sect",
+      "description": "ลงทุนการถ่ายทอดของฝ่าย",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "INVESTIGATE_MEMBER",
+      "name": "กิจการสำนัก · INVESTIGATE_MEMBER",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "MANAGE_RESOURCES",
+      "name": "กิจการสำนัก · MANAGE_RESOURCES",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "OPPOSE_CANDIDATE",
+      "name": "กิจการสำนัก · OPPOSE_CANDIDATE",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PROMOTE_MEMBER",
+      "name": "เลื่อนตำแหน่ง",
+      "category": "sect",
+      "description": "เลื่อนตำแหน่ง",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "PUNISH_MEMBER",
+      "name": "ลงโทษสมาชิก",
+      "category": "sect",
+      "description": "ลงโทษสมาชิก",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "RECRUIT_DISCIPLE",
+      "name": "รับคนเข้าฝ่าย",
+      "category": "sect",
+      "description": "รับคนเข้าฝ่าย",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "REPAIR_FACILITY",
+      "name": "กิจการสำนัก · REPAIR_FACILITY",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "REQUEST_PROMOTION",
+      "name": "เสนอผลงานขอเลื่อนตำแหน่ง",
+      "category": "sect",
+      "description": "เสนอผลงานขอเลื่อนตำแหน่ง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "ask_promotion"
+    },
+    {
+      "id": "RESEARCH_TECHNIQUE",
+      "name": "กิจการสำนัก · RESEARCH_TECHNIQUE",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "REWARD_MEMBER",
+      "name": "ได้รับรางวัล",
+      "category": "sect",
+      "description": "ได้รับรางวัล",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "SECT_MISSION",
+      "name": "กิจการสำนัก · SECT_MISSION",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SECT_SHORTAGE",
+      "name": "คลังต่ำกว่าเป้าหมาย",
+      "category": "sect",
+      "description": "คลังต่ำกว่าเป้าหมาย",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "SECT_TRAINING",
+      "name": "กิจการสำนัก · SECT_TRAINING",
+      "category": "sect",
+      "description": "คำศัพท์สำหรับระบบ กิจการสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SUPPORT_CANDIDATE",
+      "name": "สนับสนุนผู้สืบทอด",
+      "category": "sect",
+      "description": "สนับสนุนผู้สืบทอด",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "support_candidate"
+    },
+    {
+      "id": "TEACH_DISCIPLE",
+      "name": "วางแผนรับถ่ายทอดวิชา",
+      "category": "sect",
+      "description": "วางแผนรับถ่ายทอดวิชา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "master_art"
+    },
+    {
+      "id": "APOLOGIZE",
+      "name": "สัมพันธ์ · APOLOGIZE",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ARGUE",
+      "name": "สัมพันธ์ · ARGUE",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ASK_FOR_HELP",
+      "name": "สัมพันธ์ · ASK_FOR_HELP",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "BUILD_TRUST",
+      "name": "ทำงานร่วมกันสร้างความเชื่อใจ",
+      "category": "social",
+      "description": "ทำงานร่วมกันสร้างความเชื่อใจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "build_trust"
+    },
+    {
+      "id": "CONFESS_SECRET",
+      "name": "สัมพันธ์ · CONFESS_SECRET",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "FORM_RIVALRY",
+      "name": "สัมพันธ์ · FORM_RIVALRY",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "GIVE_GIFT",
+      "name": "มอบสิ่งของ",
+      "category": "social",
+      "description": "มอบสิ่งของ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "GOSSIP",
+      "name": "ฟังข่าวในสำนัก",
+      "category": "social",
+      "description": "ฟังข่าวในสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "gossip"
+    },
+    {
+      "id": "HELP_PERSON",
+      "name": "ช่วยงานต่างหน้าที่",
+      "category": "social",
+      "description": "ช่วยงานต่างหน้าที่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "help_other"
+    },
+    {
+      "id": "INSULT",
+      "name": "สัมพันธ์ · INSULT",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "INTIMIDATE",
+      "name": "สัมพันธ์ · INTIMIDATE",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "INVESTIGATE_RUMOR",
+      "name": "สัมพันธ์ · INVESTIGATE_RUMOR",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "MAKE_FRIEND",
+      "name": "สัมพันธ์ · MAKE_FRIEND",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "MANIPULATE",
+      "name": "สัมพันธ์ · MANIPULATE",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PRAISE",
+      "name": "สัมพันธ์ · PRAISE",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "RECRUIT_ALLY",
+      "name": "สัมพันธ์ · RECRUIT_ALLY",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "REPAIR_RELATIONSHIP",
+      "name": "ปรับความเข้าใจกับคู่ขัดแย้ง",
+      "category": "social",
+      "description": "ปรับความเข้าใจกับคู่ขัดแย้ง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "reconcile"
+    },
+    {
+      "id": "REPAY_FAVOR",
+      "name": "ตอบแทนความช่วยเหลือ",
+      "category": "social",
+      "description": "ตอบแทนความช่วยเหลือ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "wallet": "validated"
+      },
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "repay_favor"
+    },
+    {
+      "id": "REQUEST_FAVOR",
+      "name": "สัมพันธ์ · REQUEST_FAVOR",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SOCIALIZE",
+      "name": "พบปะสหาย",
+      "category": "social",
+      "description": "พบปะสหาย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "social"
+    },
+    {
+      "id": "SPREAD_RUMOR",
+      "name": "สัมพันธ์ · SPREAD_RUMOR",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "VISIT_FAMILY",
+      "name": "สัมพันธ์ · VISIT_FAMILY",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "VISIT_FRIEND",
+      "name": "ผูกพันใกล้ชิด",
+      "category": "social",
+      "description": "ผูกพันใกล้ชิด",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "court"
+    },
+    {
+      "id": "VISIT_MASTER",
+      "name": "สัมพันธ์ · VISIT_MASTER",
+      "category": "social",
+      "description": "คำศัพท์สำหรับระบบ สัมพันธ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "ESCORT",
+      "name": "เดินทาง · ESCORT",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "EXPLORE",
+      "name": "เดินทาง · EXPLORE",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "FIND_TREASURE",
+      "name": "พบทรัพยากรหรือของตกทอด",
+      "category": "travel",
+      "description": "พบทรัพยากรหรือของตกทอด",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "FLEE",
+      "name": "เดินทาง · FLEE",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "FOLLOW_TARGET",
+      "name": "เดินทาง · FOLLOW_TARGET",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "HIDE",
+      "name": "เดินทาง · HIDE",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "HUNT",
+      "name": "เดินทาง · HUNT",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "INFILTRATE",
+      "name": "เดินทาง · INFILTRATE",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "PATROL",
+      "name": "ลาดตระเวนนอกเวร",
+      "category": "travel",
+      "description": "ลาดตระเวนนอกเวร",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "patrol"
+    },
+    {
+      "id": "RETURN_HOME",
+      "name": "กลับจากการเดินทาง",
+      "category": "travel",
+      "description": "กลับจากการเดินทาง",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "SCOUT",
+      "name": "เดินทาง · SCOUT",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SEARCH",
+      "name": "เดินทาง · SEARCH",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "SEARCH_RUINS",
+      "name": "ค้นพื้นที่ตามข่าว",
+      "category": "travel",
+      "description": "ค้นพื้นที่ตามข่าว",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "SEARCH_TREASURE",
+      "name": "เดินทาง · SEARCH_TREASURE",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "STUDY_TREASURE",
+      "name": "เดินทาง · STUDY_TREASURE",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "TRAVEL",
+      "name": "เดินทางไปตามเบาะแส",
+      "category": "travel",
+      "description": "เดินทางไปตามเบาะแส",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "VISIT_CITY",
+      "name": "เดินทาง · VISIT_CITY",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    },
+    {
+      "id": "VISIT_SECT",
+      "name": "เดินทาง · VISIT_SECT",
+      "category": "travel",
+      "description": "คำศัพท์สำหรับระบบ เดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": false,
+      "handler": null
+    }
+  ]
+}
