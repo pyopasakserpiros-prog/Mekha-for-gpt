@@ -1,0 +1,23 @@
+# MeKha 1.3.0 developer handoff
+
+Standalone entry: index.html. Edit sources via index.dev.html, run python3 tools/build.py. No network runtime, fetch, CDN or npm needed to play. Schema 4 under the same MeKha save slots; migrations 1→2→3→4 preserve prior known arts and policies.
+
+New modules: living-world.js (138 physical scroll definitions, study permissions, paid copy/transcription, utility-based side activities, leadership/3-day council, foreign side simulation, character editing); living-validation.js (new save schema validation); living-ui.js (fixed sheet chrome, numeric focus, character drafts, library rules/copy queue, causal timelines).
+
+Simulation order: init → policy/council → personal intent and side plan → inherited daily simulation/weekly stewardship → own and paired side effects → reset main share → item processing. Local workEff in sim.js and N.training include .82 primary time share while an eligible side plan exists. Full-day students/story actors are excluded. One side slot per member/day, reciprocal interaction records. Existing weekly filler disabled when the new planner is loaded; original milestones/month accounting remain.
+
+Plans use finite utility scores for needs, personality, hobby, prior action cooldown, relationships and multi-day intention. Council approves 1–3 candidates every 3 days; base weekly steward still covers recruitment, promotion and established tasks. No exact SMK engine transplant. New activities do not grant full primary shifts on top of primary work.
+
+Study discovery N.unlockArt now means add a physical scroll. N.workCopy exclusively adds newly public arts/rules. Legendary signature knowledge stays personal until transcribed/copied. Existing signature recovery remains. Library uses exact rank list OR explicit person list. All original art stat/path/manual requirements remain. Revoking access pauses unfinished study but does not remove learned knowledge. Existing basic 12 public arts are founding holdings; existing saves retain all holdings. Manual lore accumulation in world.js produces cargo, not immediate shared knowledge. G.switchPath and G.setManual respect manualRules; automatic method choice does too.
+
+New office values law/left/right/external; same elder/one-office constraints as inherited model. Acting leadership resolves present, nonstudying leader → deputy → left. Transition workload/teaching .8 for 20 days. External letters, medicine, crafting and construction use actual resources and inherited limits. Automated mission and duplicate-scroll sale flags default off.
+
+Foreign named roster remains MeKha combat roster. Original foreign day is followed by bounded side activities every third personal day, paid diplomacy/war preparations, reciprocal bonds and dated news. On side days positive same-realm training progress is discounted .82. Do not treat the roster as an SMK observed subset. Foreign news snapshots remain stale until their dated update.
+
+Hard bounds: life history 96, life months 24, old journal 24; copy jobs 3; foreign side history 24; total items max 3000 stacks, qty max25000. UI spawn 1–1000. Editor validates entire draft before mutating, cancels existing study only after validation/busy check. Body-group traits mutually exclusive. Paths/realm change does not grant named items or new arts.
+
+Validation uses raw current-schema validation before migration/default filling, then inherited checksum/ref/patch checks. Serialize/load preserves RNG and action choices. UI rendering must never consume RNG or mutate S. One file index.html tested with actual inline boot/click handlers in a DOM stub; no real browser available. Browser download received network 403; Android/device performance remains unverified.
+
+Living autoAssign forecasts seasonal consumption and upkeep, ranks workers by skill/output, preserves locked jobs and reserves training labour. N.reserveAllows additionally keeps fourteen days upkeep; construction includes defensive wall and missing forge. Automatic study excludes essential production/defense jobs.
+
+Run tests: node tests/suite.js; node tests/patch.js; node tests/parity.js; node tests/living.js; node tests/ui_test.js; node tests/patch-ui.js; node tests/parity-ui.js; node tests/living-ui.js; node tests/portable.js; node tests/living-longrun.js; node tests/living-natural.js; node tests/living-management.js. Old tests updated only for deliberate schema/count/permissions/scroll-pool changes. New tests cover physical rewards, paid copying, exact permissions, revoked-study pause, transcription, paired time slots, real activity costs, money counterfactual, offices, acting leadership, atomic editing, migration and deterministic resume.
