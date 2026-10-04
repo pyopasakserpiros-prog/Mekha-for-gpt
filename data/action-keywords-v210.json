@@ -1,0 +1,9100 @@
+{
+  "version": "2.1.0",
+  "runtimeSource": "js/action-registry.js plus registered integration handlers",
+  "selectability": "supported does not imply every actor can execute an action; actual validators and event-only/native handlers are authoritative",
+  "records": [
+    {
+      "id": "AMBUSH",
+      "name": "ซุ่มโจมตี",
+      "category": "combat",
+      "description": "ซุ่มโจมตี",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "AMBUSH"
+    },
+    {
+      "id": "ASSASSINATE",
+      "name": "ลอบสังหาร",
+      "category": "combat",
+      "description": "ลอบสังหาร",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ASSASSINATE"
+    },
+    {
+      "id": "ATTACK",
+      "name": "โจมตีศัตรู",
+      "category": "combat",
+      "description": "โจมตีศัตรู",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ATTACK"
+    },
+    {
+      "id": "ATTACK_SECT",
+      "name": "ส่งกำลังโจมตีสำนัก",
+      "category": "combat",
+      "description": "ส่งกำลังโจมตีสำนัก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 35,
+      "costs": {
+        "silver": 20,
+        "food": 5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ATTACK_SECT"
+    },
+    {
+      "id": "CAPTURE",
+      "name": "จับศัตรูที่บาดเจ็บเป็นเชลย",
+      "category": "combat",
+      "description": "จับศัตรูที่บาดเจ็บเป็นเชลย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CAPTURE"
+    },
+    {
+      "id": "CHASE",
+      "name": "ไล่ตามศัตรู",
+      "category": "combat",
+      "description": "ไล่ตามศัตรู",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CHASE"
+    },
+    {
+      "id": "COUP",
+      "name": "ชิงอำนาจด้วยกำลังของกลุ่มสนับสนุน",
+      "category": "combat",
+      "description": "ชิงอำนาจด้วยกำลังของกลุ่มสนับสนุน",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 50,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "COUP"
+    },
+    {
+      "id": "DEFEND",
+      "name": "ตั้งรับศัตรู",
+      "category": "combat",
+      "description": "ตั้งรับศัตรู",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DEFEND"
+    },
+    {
+      "id": "DEFEND_SECT",
+      "name": "สร้างแนวป้องกัน",
+      "category": "combat",
+      "description": "สร้างแนวป้องกัน",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "DUEL",
+      "name": "ประลองตามคำท้า",
+      "category": "combat",
+      "description": "ประลองตามคำท้า",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DUEL"
+    },
+    {
+      "id": "DUEL_TO_DEATH",
+      "name": "ประลองเป็นตาย",
+      "category": "combat",
+      "description": "ประลองเป็นตาย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DUEL_TO_DEATH"
+    },
+    {
+      "id": "EXECUTE",
+      "name": "ตัดสินประหารเชลย",
+      "category": "combat",
+      "description": "ตัดสินประหารเชลย",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "EXECUTE"
+    },
+    {
+      "id": "LOSE_DUEL",
+      "name": "พ่ายประลอง",
+      "category": "combat",
+      "description": "พ่ายประลอง",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "PROTECT",
+      "name": "คุ้มครองคนที่กำลังถูกคุกคาม",
+      "category": "combat",
+      "description": "คุ้มครองคนที่กำลังถูกคุกคาม",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PROTECT"
+    },
+    {
+      "id": "RAID",
+      "name": "ส่งกำลังบุกปล้น",
+      "category": "combat",
+      "description": "ส่งกำลังบุกปล้น",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 35,
+      "costs": {
+        "silver": 20,
+        "food": 5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "RAID"
+    },
+    {
+      "id": "RESCUE",
+      "name": "ช่วยผู้ถูกจับกลับสำนัก",
+      "category": "combat",
+      "description": "ช่วยผู้ถูกจับกลับสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 20,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "RESCUE"
+    },
+    {
+      "id": "RETREAT",
+      "name": "ถอนตัวจากการเผชิญหน้า",
+      "category": "combat",
+      "description": "ถอนตัวจากการเผชิญหน้า",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "RETREAT"
+    },
+    {
+      "id": "SABOTAGE",
+      "name": "ส่งกำลังทำลายสิ่งก่อสร้าง",
+      "category": "combat",
+      "description": "ส่งกำลังทำลายสิ่งก่อสร้าง",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 35,
+      "costs": {
+        "silver": 20,
+        "food": 5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SABOTAGE"
+    },
+    {
+      "id": "SIEGE",
+      "name": "ส่งกำลังล้อมสำนัก",
+      "category": "combat",
+      "description": "ส่งกำลังล้อมสำนัก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 35,
+      "costs": {
+        "silver": 20,
+        "food": 5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SIEGE"
+    },
+    {
+      "id": "SPARE",
+      "name": "ไว้ชีวิตและปล่อยเชลย",
+      "category": "combat",
+      "description": "ไว้ชีวิตและปล่อยเชลย",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SPARE"
+    },
+    {
+      "id": "WIN_DUEL",
+      "name": "ชนะประลอง",
+      "category": "combat",
+      "description": "ชนะประลอง",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "combat"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "ABSORB_SPIRIT_ENERGY",
+      "name": "ดูดซับพลังวิญญาณ",
+      "category": "cultivation",
+      "description": "ดูดซับพลังวิญญาณ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "stone": 0.1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ABSORB_SPIRIT_ENERGY"
+    },
+    {
+      "id": "BREAKTHROUGH_ATTEMPT",
+      "name": "พยายามทะลวงขอบเขต",
+      "category": "cultivation",
+      "description": "พยายามทะลวงขอบเขต",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 20,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "BREAKTHROUGH_ATTEMPT"
+    },
+    {
+      "id": "CULTIVATE",
+      "name": "บ่มเพาะ",
+      "category": "cultivation",
+      "description": "บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "stone": 0.1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "CULTIVATE"
+    },
+    {
+      "id": "MEDITATE",
+      "name": "นั่งสมาธิ",
+      "category": "cultivation",
+      "description": "นั่งสมาธิ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "MEDITATE"
+    },
+    {
+      "id": "PREPARE_BREAKTHROUGH",
+      "name": "เตรียมฐานรากทะลวง",
+      "category": "cultivation",
+      "description": "เตรียมฐานรากทะลวง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "PREPARE_BREAKTHROUGH"
+    },
+    {
+      "id": "PURIFY_QI",
+      "name": "ชำระปราณ",
+      "category": "cultivation",
+      "description": "ชำระปราณ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "PURIFY_QI"
+    },
+    {
+      "id": "REFINE_QI",
+      "name": "ขัดเกลาลมปราณ",
+      "category": "cultivation",
+      "description": "ขัดเกลาลมปราณ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "stone": 0.1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "REFINE_QI"
+    },
+    {
+      "id": "SECLUDED_CULTIVATION",
+      "name": "เก็บตัวบ่มเพาะ",
+      "category": "cultivation",
+      "description": "เก็บตัวบ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "stone": 0.1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "SECLUDED_CULTIVATION"
+    },
+    {
+      "id": "SEEK_BREAKTHROUGH_RESOURCE",
+      "name": "หาโอสถเตรียมทะลวง",
+      "category": "cultivation",
+      "description": "หาโอสถเตรียมทะลวง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEEK_BREAKTHROUGH_RESOURCE"
+    },
+    {
+      "id": "STABILIZE_REALM",
+      "name": "ปรับขอบเขตให้มั่นคง",
+      "category": "cultivation",
+      "description": "ปรับขอบเขตให้มั่นคง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "STABILIZE_REALM"
+    },
+    {
+      "id": "STUDY_CULTIVATION_MANUAL",
+      "name": "ศึกษาคัมภีร์บ่มเพาะ",
+      "category": "cultivation",
+      "description": "ศึกษาคัมภีร์บ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "stone": 0.1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "STUDY_CULTIVATION_MANUAL"
+    },
+    {
+      "id": "SUPPRESS_DEVIATION",
+      "name": "ระงับปราณแตกซ่าน",
+      "category": "cultivation",
+      "description": "ระงับปราณแตกซ่าน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "cultivation"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SUPPRESS_DEVIATION"
+    },
+    {
+      "id": "BARTER",
+      "name": "แลกทรัพยากรกับอีกสำนัก",
+      "category": "economy",
+      "description": "แลกทรัพยากรกับอีกสำนัก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "BARTER"
+    },
+    {
+      "id": "BORROW_MONEY",
+      "name": "ขอกู้เงิน",
+      "category": "economy",
+      "description": "ขอกู้เงิน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "BORROW_MONEY"
+    },
+    {
+      "id": "BUY_ITEM",
+      "name": "ซื้อของด้วยเงินส่วนตัว",
+      "category": "economy",
+      "description": "ซื้อของด้วยเงินส่วนตัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "wallet": "item_price"
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "BUY_ITEM"
+    },
+    {
+      "id": "BUY_RESOURCES",
+      "name": "ซื้อวัตถุดิบจากตลาดจำกัด",
+      "category": "economy",
+      "description": "ซื้อวัตถุดิบจากตลาดจำกัด",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": "market_price"
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "BUY_RESOURCES"
+    },
+    {
+      "id": "CRAFT",
+      "name": "ผลิตสิ่งของ",
+      "category": "economy",
+      "description": "ผลิตสิ่งของ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "materials": "recipe"
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CRAFT"
+    },
+    {
+      "id": "DONATE_RESOURCES",
+      "name": "มอบทรัพยากรช่วยสำนักอื่น",
+      "category": "economy",
+      "description": "มอบทรัพยากรช่วยสำนักอื่น",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "DONATE_RESOURCES"
+    },
+    {
+      "id": "EARN_MONEY",
+      "name": "ทำงานรับค่าจ้าง",
+      "category": "economy",
+      "description": "ทำงานรับค่าจ้าง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "EARN_MONEY"
+    },
+    {
+      "id": "FORGE_WEAPON",
+      "name": "ตีอาวุธ",
+      "category": "economy",
+      "description": "ตีอาวุธ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "materials": "recipe"
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "FORGE_WEAPON"
+    },
+    {
+      "id": "GATHER_HERBS",
+      "name": "เก็บสมุนไพร",
+      "category": "economy",
+      "description": "เก็บสมุนไพร",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "site"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "GATHER_HERBS"
+    },
+    {
+      "id": "HARVEST_RESOURCE",
+      "name": "เก็บทรัพยากรจากแหล่ง",
+      "category": "economy",
+      "description": "เก็บทรัพยากรจากแหล่ง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "site"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "HARVEST_RESOURCE"
+    },
+    {
+      "id": "INVEST",
+      "name": "ลงทุนการผลิต",
+      "category": "economy",
+      "description": "ลงทุนการผลิต",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "LEND_MONEY",
+      "name": "ให้กู้เงิน",
+      "category": "economy",
+      "description": "ให้กู้เงิน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "LEND_MONEY"
+    },
+    {
+      "id": "LOOT",
+      "name": "เก็บของจากฝ่ายที่พ่ายแพ้",
+      "category": "economy",
+      "description": "เก็บของจากฝ่ายที่พ่ายแพ้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "LOOT"
+    },
+    {
+      "id": "MANAGE_SHOP",
+      "name": "ดูแลกิจการร้านค้า",
+      "category": "economy",
+      "description": "ดูแลกิจการร้านค้า",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "MANAGE_SHOP"
+    },
+    {
+      "id": "MINE_ORE",
+      "name": "ขุดแร่",
+      "category": "economy",
+      "description": "ขุดแร่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "site"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "MINE_ORE"
+    },
+    {
+      "id": "REFINE_PILL",
+      "name": "ปรุงโอสถ",
+      "category": "economy",
+      "description": "ปรุงโอสถ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "materials": "recipe"
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "REFINE_PILL"
+    },
+    {
+      "id": "REPAIR_EQUIPMENT",
+      "name": "ซ่อมบำรุงอุปกรณ์",
+      "category": "economy",
+      "description": "ซ่อมบำรุงอุปกรณ์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "ore": 0.2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "REPAIR_EQUIPMENT"
+    },
+    {
+      "id": "REPAY_LOAN",
+      "name": "คืนเงินกู้ตามสัญญา",
+      "category": "economy",
+      "description": "คืนเงินกู้ตามสัญญา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "REPAY_LOAN"
+    },
+    {
+      "id": "ROB",
+      "name": "ปล้นทรัพย์",
+      "category": "economy",
+      "description": "ปล้นทรัพย์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ROB"
+    },
+    {
+      "id": "SAVE_MONEY",
+      "name": "จัดแผนเงินเก็บ",
+      "category": "economy",
+      "description": "จัดแผนเงินเก็บ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "SAVE_MONEY"
+    },
+    {
+      "id": "SEEK_BETTER_WEAPON",
+      "name": "ขอซื้ออุปกรณ์ที่เหมาะกับตน",
+      "category": "economy",
+      "description": "ขอซื้ออุปกรณ์ที่เหมาะกับตน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "wallet": "validated"
+      },
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "seek_weapon"
+    },
+    {
+      "id": "SELL_ITEM",
+      "name": "ขายของส่วนตัวที่ไม่จำเป็น",
+      "category": "economy",
+      "description": "ขายของส่วนตัวที่ไม่จำเป็น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SELL_ITEM"
+    },
+    {
+      "id": "SMUGGLE",
+      "name": "ลักลอบส่งสินค้า",
+      "category": "economy",
+      "description": "ลักลอบส่งสินค้า",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 25,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SMUGGLE"
+    },
+    {
+      "id": "STEAL",
+      "name": "ลักทรัพย์",
+      "category": "economy",
+      "description": "ลักทรัพย์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 30,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "STEAL"
+    },
+    {
+      "id": "TRADE",
+      "name": "ส่งสินค้าแลกเงินระหว่างสำนัก",
+      "category": "economy",
+      "description": "ส่งสินค้าแลกเงินระหว่างสำนัก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "TRADE"
+    },
+    {
+      "id": "WORK",
+      "name": "รับหน้าที่งานประจำ",
+      "category": "economy",
+      "description": "รับหน้าที่งานประจำ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "economy"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "WORK"
+    },
+    {
+      "id": "CARE_FOR_INJURED",
+      "name": "ดูแลผู้บาดเจ็บ",
+      "category": "health",
+      "description": "ดูแลผู้บาดเจ็บ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "CARE_FOR_INJURED"
+    },
+    {
+      "id": "DETOXIFY",
+      "name": "ขับพิษ",
+      "category": "health",
+      "description": "ขับพิษ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "herb": 0.3
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DETOXIFY"
+    },
+    {
+      "id": "HEAL_INTERNAL_INJURY",
+      "name": "รักษาบาดเจ็บภายใน",
+      "category": "health",
+      "description": "รักษาบาดเจ็บภายใน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "herb": 0.3
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "HEAL_INTERNAL_INJURY"
+    },
+    {
+      "id": "RECOVER",
+      "name": "พักฟื้น",
+      "category": "health",
+      "description": "พักฟื้น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "RECOVER"
+    },
+    {
+      "id": "REST",
+      "name": "พักรักษาร่างกาย",
+      "category": "health",
+      "description": "พักรักษาร่างกาย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "REST"
+    },
+    {
+      "id": "RESTORE_QI",
+      "name": "ฟื้นพลังปราณ",
+      "category": "health",
+      "description": "ฟื้นพลังปราณ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "RESTORE_QI"
+    },
+    {
+      "id": "SEEK_DOCTOR",
+      "name": "ขอรับการรักษา",
+      "category": "health",
+      "description": "ขอรับการรักษา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "herb": 0.3
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEEK_DOCTOR"
+    },
+    {
+      "id": "TAKE_MEDICINE",
+      "name": "ใช้ยาที่มีอยู่",
+      "category": "health",
+      "description": "ใช้ยาที่มีอยู่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "TAKE_MEDICINE"
+    },
+    {
+      "id": "TREAT_POISON",
+      "name": "รักษาพิษ",
+      "category": "health",
+      "description": "รักษาพิษ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "herb": 0.3
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "TREAT_POISON"
+    },
+    {
+      "id": "TREAT_WOUND",
+      "name": "ทำแผล",
+      "category": "health",
+      "description": "ทำแผล",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "herb": 0.3
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "TREAT_WOUND"
+    },
+    {
+      "id": "USE_CULTIVATION_PILL",
+      "name": "ใช้โอสถบ่มเพาะ",
+      "category": "health",
+      "description": "ใช้โอสถบ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "USE_CULTIVATION_PILL"
+    },
+    {
+      "id": "VISIT_PHYSICIAN",
+      "name": "ไปพบแพทย์",
+      "category": "health",
+      "description": "ไปพบแพทย์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "herb": 0.3
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "health"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "VISIT_PHYSICIAN"
+    },
+    {
+      "id": "ASK_ABOUT_LOCATION",
+      "name": "สอบถามเส้นทาง",
+      "category": "knowledge",
+      "description": "สอบถามเส้นทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ASK_ABOUT_LOCATION"
+    },
+    {
+      "id": "ASK_ABOUT_PERSON",
+      "name": "สอบถามเรื่องบุคคล",
+      "category": "knowledge",
+      "description": "สอบถามเรื่องบุคคล",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ASK_ABOUT_PERSON"
+    },
+    {
+      "id": "GOSSIP",
+      "name": "สนทนาข่าวในสำนัก",
+      "category": "knowledge",
+      "description": "สนทนาข่าวในสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "GOSSIP"
+    },
+    {
+      "id": "HIDE_INFORMATION",
+      "name": "ปกปิดข้อมูล",
+      "category": "knowledge",
+      "description": "ปกปิดข้อมูล",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "HIDE_INFORMATION"
+    },
+    {
+      "id": "INVESTIGATE",
+      "name": "สืบข้อเท็จจริง",
+      "category": "knowledge",
+      "description": "สืบข้อเท็จจริง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "INVESTIGATE"
+    },
+    {
+      "id": "INVESTIGATE_RUMOR",
+      "name": "สืบข่าวลือ",
+      "category": "knowledge",
+      "description": "สืบข่าวลือ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "INVESTIGATE_RUMOR"
+    },
+    {
+      "id": "LEARN_RUMOR",
+      "name": "ได้รับเบาะแส",
+      "category": "knowledge",
+      "description": "ได้รับเบาะแส",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "READ",
+      "name": "อ่านตำรับ",
+      "category": "knowledge",
+      "description": "อ่านตำรับ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "READ"
+    },
+    {
+      "id": "RESEARCH",
+      "name": "ค้นคว้าความรู้",
+      "category": "knowledge",
+      "description": "ค้นคว้าความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "RESEARCH"
+    },
+    {
+      "id": "SEEK_INFORMATION",
+      "name": "หาแหล่งข่าว",
+      "category": "knowledge",
+      "description": "หาแหล่งข่าว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEEK_INFORMATION"
+    },
+    {
+      "id": "SHARE_INFORMATION",
+      "name": "แบ่งปันข่าว",
+      "category": "knowledge",
+      "description": "แบ่งปันข่าว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "SHARE_INFORMATION"
+    },
+    {
+      "id": "SPREAD_RUMOR",
+      "name": "ปล่อยข่าวลือ",
+      "category": "knowledge",
+      "description": "ปล่อยข่าวลือ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SPREAD_RUMOR"
+    },
+    {
+      "id": "SPY_ON_TARGET",
+      "name": "เฝ้าดูเป้าหมาย",
+      "category": "knowledge",
+      "description": "เฝ้าดูเป้าหมาย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SPY_ON_TARGET"
+    },
+    {
+      "id": "STUDY",
+      "name": "ศึกษาบันทึก",
+      "category": "knowledge",
+      "description": "ศึกษาบันทึก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "STUDY"
+    },
+    {
+      "id": "TEACH",
+      "name": "สอนความรู้",
+      "category": "knowledge",
+      "description": "สอนความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "TEACH"
+    },
+    {
+      "id": "TEACH_DISCIPLE",
+      "name": "สอนวิชาแก่ศิษย์",
+      "category": "knowledge",
+      "description": "สอนวิชาแก่ศิษย์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "TEACH_DISCIPLE"
+    },
+    {
+      "id": "TEACH_TECHNIQUE",
+      "name": "ถ่ายทอดวิชา",
+      "category": "knowledge",
+      "description": "ถ่ายทอดวิชา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "TEACH_TECHNIQUE"
+    },
+    {
+      "id": "VERIFY_INFORMATION",
+      "name": "ตรวจสอบข่าวกับพยาน",
+      "category": "knowledge",
+      "description": "ตรวจสอบข่าวกับพยาน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "verify_news"
+    },
+    {
+      "id": "WRITE_RECORD",
+      "name": "เขียนบันทึกความรู้",
+      "category": "knowledge",
+      "description": "เขียนบันทึกความรู้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "knowledge"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "WRITE_RECORD"
+    },
+    {
+      "id": "ATTEND_EVENT",
+      "name": "ร่วมงานชุมชน",
+      "category": "life",
+      "description": "ร่วมงานชุมชน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "ATTEND_EVENT"
+    },
+    {
+      "id": "CARE_FOR_FAMILY",
+      "name": "ดูแลคนในครอบครัว",
+      "category": "life",
+      "description": "ดูแลคนในครอบครัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CARE_FOR_FAMILY"
+    },
+    {
+      "id": "DRINK",
+      "name": "ดื่มสุราพอประมาณ",
+      "category": "life",
+      "description": "ดื่มสุราพอประมาณ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "wallet": 0.5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DRINK"
+    },
+    {
+      "id": "EAT",
+      "name": "กินอาหาร",
+      "category": "life",
+      "description": "กินอาหาร",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "food": 0.2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "EAT"
+    },
+    {
+      "id": "MANAGE_HOME",
+      "name": "ดูแลที่พัก",
+      "category": "life",
+      "description": "ดูแลที่พัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "MANAGE_HOME"
+    },
+    {
+      "id": "MARRY",
+      "name": "ยอมรับการสร้างครอบครัว",
+      "category": "life",
+      "description": "ยอมรับการสร้างครอบครัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "MARRY"
+    },
+    {
+      "id": "PROPOSE_MARRIAGE",
+      "name": "ขอสร้างครอบครัว",
+      "category": "life",
+      "description": "ขอสร้างครอบครัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PROPOSE_MARRIAGE"
+    },
+    {
+      "id": "PURSUE_HOBBY",
+      "name": "ทำงานอดิเรก",
+      "category": "life",
+      "description": "ทำงานอดิเรก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PURSUE_HOBBY"
+    },
+    {
+      "id": "RELAX",
+      "name": "พักผ่อน",
+      "category": "life",
+      "description": "พักผ่อน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "RELAX"
+    },
+    {
+      "id": "SLEEP",
+      "name": "นอนพัก",
+      "category": "life",
+      "description": "นอนพัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "SLEEP"
+    },
+    {
+      "id": "VISIT_FAMILY",
+      "name": "เยี่ยมครอบครัว",
+      "category": "life",
+      "description": "เยี่ยมครอบครัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "VISIT_FAMILY"
+    },
+    {
+      "id": "VISIT_MARKET",
+      "name": "เดินตลาด",
+      "category": "life",
+      "description": "เดินตลาด",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "VISIT_MARKET"
+    },
+    {
+      "id": "WANDER",
+      "name": "เดินเล่น",
+      "category": "life",
+      "description": "เดินเล่น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "life"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "WANDER"
+    },
+    {
+      "id": "CHALLENGE",
+      "name": "ท้าประลองคู่ปรับ",
+      "category": "martial",
+      "description": "ท้าประลองคู่ปรับ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 12,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "challenge_rival"
+    },
+    {
+      "id": "COMPREHEND_TECHNIQUE",
+      "name": "ทำความเข้าใจวิชา",
+      "category": "martial",
+      "description": "ทำความเข้าใจวิชา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "COMPREHEND_TECHNIQUE"
+    },
+    {
+      "id": "CREATE_TECHNIQUE",
+      "name": "สร้างแขนงวิชาส่วนตัว",
+      "category": "martial",
+      "description": "สร้างแขนงวิชาส่วนตัว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 20,
+        "stone": 2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CREATE_TECHNIQUE"
+    },
+    {
+      "id": "CULTIVATION_EXCHANGE",
+      "name": "แลกเปลี่ยนการบ่มเพาะ",
+      "category": "martial",
+      "description": "แลกเปลี่ยนการบ่มเพาะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "CULTIVATION_EXCHANGE"
+    },
+    {
+      "id": "GUIDE_JUNIOR_CULTIVATION",
+      "name": "ชี้แนะผู้เยาว์",
+      "category": "martial",
+      "description": "ชี้แนะผู้เยาว์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "GUIDE_JUNIOR_CULTIVATION"
+    },
+    {
+      "id": "IMITATE_TECHNIQUE",
+      "name": "ศึกษาวิชาจากผู้ชำนาญ",
+      "category": "martial",
+      "description": "ศึกษาวิชาจากผู้ชำนาญ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "IMITATE_TECHNIQUE"
+    },
+    {
+      "id": "IMPROVE_TECHNIQUE",
+      "name": "ขัดเกลาวิชา",
+      "category": "martial",
+      "description": "ขัดเกลาวิชา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "IMPROVE_TECHNIQUE"
+    },
+    {
+      "id": "OBSERVE_EXPERT",
+      "name": "สังเกตผู้เชี่ยวชาญ",
+      "category": "martial",
+      "description": "สังเกตผู้เชี่ยวชาญ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "OBSERVE_EXPERT"
+    },
+    {
+      "id": "PRACTICE_FIST",
+      "name": "ฝึกหมัด",
+      "category": "martial",
+      "description": "ฝึกหมัด",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRACTICE_FIST"
+    },
+    {
+      "id": "PRACTICE_FORMATION",
+      "name": "ฝึกค่ายกล",
+      "category": "martial",
+      "description": "ฝึกค่ายกล",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRACTICE_FORMATION"
+    },
+    {
+      "id": "PRACTICE_HIDDEN_WEAPON",
+      "name": "ฝึกอาวุธลับ",
+      "category": "martial",
+      "description": "ฝึกอาวุธลับ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRACTICE_HIDDEN_WEAPON"
+    },
+    {
+      "id": "PRACTICE_PALM",
+      "name": "ฝึกฝ่ามือ",
+      "category": "martial",
+      "description": "ฝึกฝ่ามือ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRACTICE_PALM"
+    },
+    {
+      "id": "PRACTICE_QINGGONG",
+      "name": "ฝึกวิชาตัวเบา",
+      "category": "martial",
+      "description": "ฝึกวิชาตัวเบา",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRACTICE_QINGGONG"
+    },
+    {
+      "id": "PRACTICE_SABER",
+      "name": "ฝึกดาบ",
+      "category": "martial",
+      "description": "ฝึกดาบ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRACTICE_SABER"
+    },
+    {
+      "id": "PRACTICE_SPEAR",
+      "name": "ฝึกทวน",
+      "category": "martial",
+      "description": "ฝึกทวน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRACTICE_SPEAR"
+    },
+    {
+      "id": "PRACTICE_SWORD",
+      "name": "ฝึกกระบี่",
+      "category": "martial",
+      "description": "ฝึกกระบี่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRACTICE_SWORD"
+    },
+    {
+      "id": "REQUEST_GUIDANCE",
+      "name": "ขอคำชี้แนะ",
+      "category": "martial",
+      "description": "ขอคำชี้แนะ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "REQUEST_GUIDANCE"
+    },
+    {
+      "id": "RESEARCH_TECHNIQUE",
+      "name": "ค้นคว้าตำรับวิชาสำนัก",
+      "category": "martial",
+      "description": "ค้นคว้าตำรับวิชาสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 20,
+        "stone": 2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "RESEARCH_TECHNIQUE"
+    },
+    {
+      "id": "SEEK_MASTER",
+      "name": "ขอฝากตัวเป็นศิษย์",
+      "category": "martial",
+      "description": "ขอฝากตัวเป็นศิษย์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEEK_MASTER"
+    },
+    {
+      "id": "SPAR",
+      "name": "ประลองฝึกฝีมือ",
+      "category": "martial",
+      "description": "ประลองฝึกฝีมือ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "spar"
+    },
+    {
+      "id": "STUDY_TECHNIQUE",
+      "name": "เรียนวิชาจากแหล่งที่เข้าถึง",
+      "category": "martial",
+      "description": "เรียนวิชาจากแหล่งที่เข้าถึง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "STUDY_TECHNIQUE"
+    },
+    {
+      "id": "TRAIN_MARTIAL_ART",
+      "name": "ฝึกวิชาที่เรียนแล้ว",
+      "category": "martial",
+      "description": "ฝึกวิชาที่เรียนแล้ว",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "martial"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "TRAIN_MARTIAL_ART"
+    },
+    {
+      "id": "ABANDON_GOAL",
+      "name": "ละวางเป้าหมาย",
+      "category": "personal",
+      "description": "ละวางเป้าหมาย",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "BECOME_JEALOUS",
+      "name": "เกิดความริษยา",
+      "category": "personal",
+      "description": "เกิดความริษยา",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "BECOME_SUSPICIOUS",
+      "name": "เริ่มระแวง",
+      "category": "personal",
+      "description": "เริ่มระแวง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "BECOME_SUSPICIOUS"
+    },
+    {
+      "id": "CELEBRATE",
+      "name": "ฉลองความสำเร็จ",
+      "category": "personal",
+      "description": "ฉลองความสำเร็จ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CELEBRATE"
+    },
+    {
+      "id": "COMPLETE_GOAL",
+      "name": "บรรลุเป้าหมาย",
+      "category": "personal",
+      "description": "บรรลุเป้าหมาย",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "FAIL_GOAL",
+      "name": "พลาดเป้าหมาย",
+      "category": "personal",
+      "description": "พลาดเป้าหมาย",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "FORGIVE",
+      "name": "คลายความแค้นจากการคืนดี",
+      "category": "personal",
+      "description": "คลายความแค้นจากการคืนดี",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "forgive"
+    },
+    {
+      "id": "GAIN_CONFIDENCE",
+      "name": "ทบทวนความสำเร็จเพื่อสร้างความมั่นใจ",
+      "category": "personal",
+      "description": "ทบทวนความสำเร็จเพื่อสร้างความมั่นใจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "GAIN_CONFIDENCE"
+    },
+    {
+      "id": "GIVE_UP_REVENGE",
+      "name": "ละวางการแก้แค้น",
+      "category": "personal",
+      "description": "ละวางการแก้แค้น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "GIVE_UP_REVENGE"
+    },
+    {
+      "id": "HOLD_GRUDGE",
+      "name": "จดจำความแค้น",
+      "category": "personal",
+      "description": "จดจำความแค้น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "HOLD_GRUDGE"
+    },
+    {
+      "id": "LOSE_CONFIDENCE",
+      "name": "ยอมรับความพ่ายแพ้",
+      "category": "personal",
+      "description": "ยอมรับความพ่ายแพ้",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "LOSE_CONFIDENCE"
+    },
+    {
+      "id": "MOURN",
+      "name": "สูญเสียคนที่ผูกพัน",
+      "category": "personal",
+      "description": "สูญเสียคนที่ผูกพัน",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "REFLECT",
+      "name": "ทบทวนฐานราก",
+      "category": "personal",
+      "description": "ทบทวนฐานราก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "reflect"
+    },
+    {
+      "id": "SEEK_REDEMPTION",
+      "name": "ชดเชยความผิด",
+      "category": "personal",
+      "description": "ชดเชยความผิด",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEEK_REDEMPTION"
+    },
+    {
+      "id": "SEEK_REVENGE",
+      "name": "ตั้งใจแก้แค้น",
+      "category": "personal",
+      "description": "ตั้งใจแก้แค้น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEEK_REVENGE"
+    },
+    {
+      "id": "SET_GOAL",
+      "name": "ตั้งเป้าหมาย",
+      "category": "personal",
+      "description": "ตั้งเป้าหมาย",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_event"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "personal"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event"
+    },
+    {
+      "id": "BREAK_ALLIANCE",
+      "name": "ยุติพันธมิตร",
+      "category": "politics",
+      "description": "ยุติพันธมิตร",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "BREAK_ALLIANCE"
+    },
+    {
+      "id": "BRIBE",
+      "name": "ติดสินบนผู้แทน",
+      "category": "politics",
+      "description": "ติดสินบนผู้แทน",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "BRIBE"
+    },
+    {
+      "id": "CAPTURE_RESOURCE_SITE",
+      "name": "ยึดพื้นที่จากผู้ควบคุม",
+      "category": "politics",
+      "description": "ยึดพื้นที่จากผู้ควบคุม",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "site"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 30,
+        "food": 5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "CAPTURE_RESOURCE_SITE"
+    },
+    {
+      "id": "CLAIM_TERRITORY",
+      "name": "เข้าควบคุมแหล่งไร้เจ้าของ",
+      "category": "politics",
+      "description": "เข้าควบคุมแหล่งไร้เจ้าของ",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "site"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 30,
+        "food": 5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "CLAIM_TERRITORY"
+    },
+    {
+      "id": "CONTEST_TERRITORY",
+      "name": "ยกกำลังแย่งชิงพื้นที่",
+      "category": "politics",
+      "description": "ยกกำลังแย่งชิงพื้นที่",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "site"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 30,
+        "food": 5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CONTEST_TERRITORY"
+    },
+    {
+      "id": "COUNTER_SPY",
+      "name": "ตรวจจับสายสืบและคุ้มครองข้อมูล",
+      "category": "politics",
+      "description": "ตรวจจับสายสืบและคุ้มครองข้อมูล",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "COUNTER_SPY"
+    },
+    {
+      "id": "DECLARE_HOSTILITY",
+      "name": "ประกาศเป็นศัตรู",
+      "category": "politics",
+      "description": "ประกาศเป็นศัตรู",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DECLARE_HOSTILITY"
+    },
+    {
+      "id": "DECLARE_WAR",
+      "name": "ประกาศสงคราม",
+      "category": "politics",
+      "description": "ประกาศสงคราม",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 25,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "DECLARE_WAR"
+    },
+    {
+      "id": "DEFEND_RESOURCE_SITE",
+      "name": "เสริมการป้องกันแหล่งทรัพยากร",
+      "category": "politics",
+      "description": "เสริมการป้องกันแหล่งทรัพยากร",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "site"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 30,
+        "food": 5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DEFEND_RESOURCE_SITE"
+    },
+    {
+      "id": "DEMAND_TRIBUTE",
+      "name": "เรียกบรรณาการ",
+      "category": "politics",
+      "description": "เรียกบรรณาการ",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DEMAND_TRIBUTE"
+    },
+    {
+      "id": "FORM_ALLIANCE",
+      "name": "ทำพันธมิตร",
+      "category": "politics",
+      "description": "ทำพันธมิตร",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "FORM_ALLIANCE"
+    },
+    {
+      "id": "MEDDLE",
+      "name": "แทรกแซงการเมือง",
+      "category": "politics",
+      "description": "แทรกแซงการเมือง",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "MEDDLE"
+    },
+    {
+      "id": "NEGOTIATE",
+      "name": "เจรจาผลประโยชน์",
+      "category": "politics",
+      "description": "เจรจาผลประโยชน์",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "NEGOTIATE"
+    },
+    {
+      "id": "OFFER_TRIBUTE",
+      "name": "เสนอเครื่องบรรณาการ",
+      "category": "politics",
+      "description": "เสนอเครื่องบรรณาการ",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "OFFER_TRIBUTE"
+    },
+    {
+      "id": "SEEK_PEACE",
+      "name": "เจรจาสงบศึก",
+      "category": "politics",
+      "description": "เจรจาสงบศึก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "SEEK_PEACE"
+    },
+    {
+      "id": "SEND_ENVOY",
+      "name": "ส่งทูต",
+      "category": "politics",
+      "description": "ส่งทูต",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEND_ENVOY"
+    },
+    {
+      "id": "SPY",
+      "name": "ส่งสายสืบ",
+      "category": "politics",
+      "description": "ส่งสายสืบ",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 25,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SPY"
+    },
+    {
+      "id": "SUPPORT_FACTION",
+      "name": "ให้ทุนฝ่ายที่สนับสนุน",
+      "category": "politics",
+      "description": "ให้ทุนฝ่ายที่สนับสนุน",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SUPPORT_FACTION"
+    },
+    {
+      "id": "THREATEN",
+      "name": "ข่มขู่ฝ่ายอื่น",
+      "category": "politics",
+      "description": "ข่มขู่ฝ่ายอื่น",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "THREATEN"
+    },
+    {
+      "id": "TRADE_EMBARGO",
+      "name": "ปิดการค้ากับฝ่ายศัตรู",
+      "category": "politics",
+      "description": "ปิดการค้ากับฝ่ายศัตรู",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "TRADE_EMBARGO"
+    },
+    {
+      "id": "UNDERMINE_FACTION",
+      "name": "บ่อนทำลายความชอบธรรมฝ่ายอื่น",
+      "category": "politics",
+      "description": "บ่อนทำลายความชอบธรรมฝ่ายอื่น",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 25,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "politics"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "UNDERMINE_FACTION"
+    },
+    {
+      "id": "ABDICATE",
+      "name": "สละตำแหน่งเพื่อยุติวิกฤต",
+      "category": "sect",
+      "description": "สละตำแหน่งเพื่อยุติวิกฤต",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ABDICATE"
+    },
+    {
+      "id": "ASSIGN_MISSION",
+      "name": "มอบหมายภารกิจ",
+      "category": "sect",
+      "description": "มอบหมายภารกิจ",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ASSIGN_MISSION"
+    },
+    {
+      "id": "BUILD_FACILITY",
+      "name": "ก่อสร้างสถานที่",
+      "category": "sect",
+      "description": "ก่อสร้างสถานที่",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 50,
+        "wood": 5,
+        "ore": 2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "BUILD_FACILITY"
+    },
+    {
+      "id": "CHALLENGE_AUTHORITY",
+      "name": "ยื่นท้าทายความชอบธรรมเจ้าสำนัก",
+      "category": "sect",
+      "description": "ยื่นท้าทายความชอบธรรมเจ้าสำนัก",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CHALLENGE_AUTHORITY"
+    },
+    {
+      "id": "CHANGE_POLICY",
+      "name": "ปรับนโยบายตามปัญหาสำนัก",
+      "category": "sect",
+      "description": "ปรับนโยบายตามปัญหาสำนัก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "CHANGE_POLICY"
+    },
+    {
+      "id": "DEMOTE_MEMBER",
+      "name": "ลดตำแหน่งสมาชิก",
+      "category": "sect",
+      "description": "ลดตำแหน่งสมาชิก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "DEMOTE_MEMBER"
+    },
+    {
+      "id": "DISCUSS_POLICY",
+      "name": "เสนอแก้แนวทางบริหาร",
+      "category": "sect",
+      "description": "เสนอแก้แนวทางบริหาร",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DISCUSS_POLICY"
+    },
+    {
+      "id": "DISTRIBUTE_EQUIPMENT",
+      "name": "จัดอุปกรณ์จากคลังให้สมาชิก",
+      "category": "sect",
+      "description": "จัดอุปกรณ์จากคลังให้สมาชิก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DISTRIBUTE_EQUIPMENT"
+    },
+    {
+      "id": "DISTRIBUTE_MEDICINE",
+      "name": "จัดยารักษาตามอาการ",
+      "category": "sect",
+      "description": "จัดยารักษาตามอาการ",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "herb": 1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "DISTRIBUTE_MEDICINE"
+    },
+    {
+      "id": "DISTRIBUTE_RESOURCES",
+      "name": "จัดทรัพยากรสนับสนุนสมาชิก",
+      "category": "sect",
+      "description": "จัดทรัพยากรสนับสนุนสมาชิก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "DISTRIBUTE_RESOURCES"
+    },
+    {
+      "id": "EXPAND_SECT",
+      "name": "ขยายความจุสำนัก",
+      "category": "sect",
+      "description": "ขยายความจุสำนัก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 50,
+        "wood": 5,
+        "ore": 2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "EXPAND_SECT"
+    },
+    {
+      "id": "FILE_PETITION",
+      "name": "ยื่นข้อร้องเรียนต่อสำนัก",
+      "category": "sect",
+      "description": "ยื่นข้อร้องเรียนต่อสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "FILE_PETITION"
+    },
+    {
+      "id": "FORM_INTERNAL_FACTION",
+      "name": "รวมกลุ่มเสนอแนวทางสำนัก",
+      "category": "sect",
+      "description": "รวมกลุ่มเสนอแนวทางสำนัก",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "FORM_INTERNAL_FACTION"
+    },
+    {
+      "id": "HOLD_MEETING",
+      "name": "ประชุมสภาสำนัก",
+      "category": "sect",
+      "description": "ประชุมสภาสำนัก",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "HOLD_MEETING"
+    },
+    {
+      "id": "IMPROVE_LIBRARY",
+      "name": "ลงทุนการถ่ายทอดของฝ่าย",
+      "category": "sect",
+      "description": "ลงทุนการถ่ายทอดของฝ่าย",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "INVESTIGATE_MEMBER",
+      "name": "สอบสวนสมาชิกตามหลักฐาน",
+      "category": "sect",
+      "description": "สอบสวนสมาชิกตามหลักฐาน",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "INVESTIGATE_MEMBER"
+    },
+    {
+      "id": "JOIN_SECT",
+      "name": "ขอเข้าร่วมสำนักอื่น",
+      "category": "sect",
+      "description": "ขอเข้าร่วมสำนักอื่น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "JOIN_SECT"
+    },
+    {
+      "id": "LEAVE_SECT",
+      "name": "ลาออกไปหาสำนักที่เหมาะสม",
+      "category": "sect",
+      "description": "ลาออกไปหาสำนักที่เหมาะสม",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "group"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "LEAVE_SECT"
+    },
+    {
+      "id": "MANAGE_RESOURCES",
+      "name": "ตรวจคลังและกำหนดความจำเป็น",
+      "category": "sect",
+      "description": "ตรวจคลังและกำหนดความจำเป็น",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "MANAGE_RESOURCES"
+    },
+    {
+      "id": "OPPOSE_CANDIDATE",
+      "name": "คัดค้านผู้ท้าชิง",
+      "category": "sect",
+      "description": "คัดค้านผู้ท้าชิง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "OPPOSE_CANDIDATE"
+    },
+    {
+      "id": "PROMOTE_MEMBER",
+      "name": "เลื่อนตำแหน่งสมาชิก",
+      "category": "sect",
+      "description": "เลื่อนตำแหน่งสมาชิก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "PROMOTE_MEMBER"
+    },
+    {
+      "id": "PUNISH_MEMBER",
+      "name": "ลงโทษตามหลักฐาน",
+      "category": "sect",
+      "description": "ลงโทษตามหลักฐาน",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "PUNISH_MEMBER"
+    },
+    {
+      "id": "RECRUIT_DISCIPLE",
+      "name": "รับบุคคลจากประชากรเข้าสำนัก",
+      "category": "sect",
+      "description": "รับบุคคลจากประชากรเข้าสำนัก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 28
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "RECRUIT_DISCIPLE"
+    },
+    {
+      "id": "REMOVE_LEADER",
+      "name": "เจ้าสำนักถูกเปลี่ยนจากกระบวนการอำนาจ",
+      "category": "sect",
+      "description": "เจ้าสำนักถูกเปลี่ยนจากกระบวนการอำนาจ",
+      "actors": [
+        "world"
+      ],
+      "requirements": [
+        "actual_cause"
+      ],
+      "targets": [
+        "character",
+        "sect"
+      ],
+      "duration": 0,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "event",
+      "execution": "outcome",
+      "canonical": "REMOVE_LEADER"
+    },
+    {
+      "id": "REPAIR_FACILITY",
+      "name": "ซ่อมสิ่งก่อสร้างเสียหาย",
+      "category": "sect",
+      "description": "ซ่อมสิ่งก่อสร้างเสียหาย",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 5,
+        "wood": 1
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "REPAIR_FACILITY"
+    },
+    {
+      "id": "REQUEST_DUTY_CHANGE",
+      "name": "ขอเปลี่ยนหน้าที่ให้เหมาะกับตน",
+      "category": "sect",
+      "description": "ขอเปลี่ยนหน้าที่ให้เหมาะกับตน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "REQUEST_DUTY_CHANGE"
+    },
+    {
+      "id": "REQUEST_PROMOTION",
+      "name": "เสนอผลงานขอเลื่อนตำแหน่ง",
+      "category": "sect",
+      "description": "เสนอผลงานขอเลื่อนตำแหน่ง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "ask_promotion"
+    },
+    {
+      "id": "REQUEST_RESOURCES",
+      "name": "ขอทรัพยากรตามความจำเป็น",
+      "category": "sect",
+      "description": "ขอทรัพยากรตามความจำเป็น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "REQUEST_RESOURCES"
+    },
+    {
+      "id": "RESOLVE_GRIEVANCE",
+      "name": "ตรวจและแก้ข้อร้องเรียน",
+      "category": "sect",
+      "description": "ตรวจและแก้ข้อร้องเรียน",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "silver": 2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "RESOLVE_GRIEVANCE"
+    },
+    {
+      "id": "REWARD_MEMBER",
+      "name": "ให้รางวัลสมาชิก",
+      "category": "sect",
+      "description": "ให้รางวัลสมาชิก",
+      "actors": [
+        "sect"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "REWARD_MEMBER"
+    },
+    {
+      "id": "SECT_MISSION",
+      "name": "รับภารกิจสำนัก",
+      "category": "sect",
+      "description": "รับภารกิจสำนัก",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SECT_MISSION"
+    },
+    {
+      "id": "SECT_SHORTAGE",
+      "name": "คลังต่ำกว่าเป้าหมาย",
+      "category": "sect",
+      "description": "คลังต่ำกว่าเป้าหมาย",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "SECT_TRAINING",
+      "name": "จัดการฝึกหมู่ของสำนัก",
+      "category": "sect",
+      "description": "จัดการฝึกหมู่ของสำนัก",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "food": 1,
+        "stone": 0.5
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SECT_TRAINING"
+    },
+    {
+      "id": "SUPPORT_CANDIDATE",
+      "name": "สนับสนุนผู้นำหรือผู้ท้าชิง",
+      "category": "sect",
+      "description": "สนับสนุนผู้นำหรือผู้ท้าชิง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "SUPPORT_CANDIDATE"
+    },
+    {
+      "id": "VOTE_NO_CONFIDENCE",
+      "name": "เสนอญัตติไม่ไว้วางใจ",
+      "category": "sect",
+      "description": "เสนอญัตติไม่ไว้วางใจ",
+      "actors": [
+        "elder"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "VOTE_NO_CONFIDENCE"
+    },
+    {
+      "id": "WITHDRAW_SUPPORT",
+      "name": "ถอนการสนับสนุน",
+      "category": "sect",
+      "description": "ถอนการสนับสนุน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "sect"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "WITHDRAW_SUPPORT"
+    },
+    {
+      "id": "APOLOGIZE",
+      "name": "ขอโทษ",
+      "category": "social",
+      "description": "ขอโทษ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "APOLOGIZE"
+    },
+    {
+      "id": "ARGUE",
+      "name": "โต้เถียงข้อขัดแย้ง",
+      "category": "social",
+      "description": "โต้เถียงข้อขัดแย้ง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ARGUE"
+    },
+    {
+      "id": "ASK_FOR_HELP",
+      "name": "ขอแรงช่วยงาน",
+      "category": "social",
+      "description": "ขอแรงช่วยงาน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ASK_FOR_HELP"
+    },
+    {
+      "id": "BUILD_TRUST",
+      "name": "ทำงานสร้างความไว้ใจ",
+      "category": "social",
+      "description": "ทำงานสร้างความไว้ใจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "BUILD_TRUST"
+    },
+    {
+      "id": "CONFESS_SECRET",
+      "name": "เปิดเผยความลับ",
+      "category": "social",
+      "description": "เปิดเผยความลับ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "CONFESS_SECRET"
+    },
+    {
+      "id": "FORM_RIVALRY",
+      "name": "ประกาศเป็นคู่ปรับ",
+      "category": "social",
+      "description": "ประกาศเป็นคู่ปรับ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "FORM_RIVALRY"
+    },
+    {
+      "id": "GIVE_GIFT",
+      "name": "มอบเงินส่วนตัวเป็นของขวัญ",
+      "category": "social",
+      "description": "มอบเงินส่วนตัวเป็นของขวัญ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "wallet": 2
+      },
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "GIVE_GIFT"
+    },
+    {
+      "id": "HELP_PERSON",
+      "name": "ช่วยงานผู้อื่น",
+      "category": "social",
+      "description": "ช่วยงานผู้อื่น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "HELP_PERSON"
+    },
+    {
+      "id": "INSULT",
+      "name": "ดูหมิ่นคู่ปรับ",
+      "category": "social",
+      "description": "ดูหมิ่นคู่ปรับ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "INSULT"
+    },
+    {
+      "id": "INTIMIDATE",
+      "name": "ข่มขู่",
+      "category": "social",
+      "description": "ข่มขู่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "INTIMIDATE"
+    },
+    {
+      "id": "MAKE_FRIEND",
+      "name": "ทำความรู้จักสหาย",
+      "category": "social",
+      "description": "ทำความรู้จักสหาย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "MAKE_FRIEND"
+    },
+    {
+      "id": "MANIPULATE",
+      "name": "ชักจูงเพื่อผลประโยชน์",
+      "category": "social",
+      "description": "ชักจูงเพื่อผลประโยชน์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "MANIPULATE"
+    },
+    {
+      "id": "PRAISE",
+      "name": "ยกย่องผลงาน",
+      "category": "social",
+      "description": "ยกย่องผลงาน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "PRAISE"
+    },
+    {
+      "id": "RECRUIT_ALLY",
+      "name": "ขอแรงสนับสนุน",
+      "category": "social",
+      "description": "ขอแรงสนับสนุน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "RECRUIT_ALLY"
+    },
+    {
+      "id": "REPAIR_RELATIONSHIP",
+      "name": "ปรับความเข้าใจ",
+      "category": "social",
+      "description": "ปรับความเข้าใจ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "REPAIR_RELATIONSHIP"
+    },
+    {
+      "id": "REPAY_FAVOR",
+      "name": "ตอบแทนความช่วยเหลือ",
+      "category": "social",
+      "description": "ตอบแทนความช่วยเหลือ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self",
+        "character",
+        "information",
+        "location"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {
+        "wallet": "validated"
+      },
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "goal": true,
+        "memory": true,
+        "need": true
+      },
+      "supported": true,
+      "handler": "repay_favor"
+    },
+    {
+      "id": "REQUEST_FAVOR",
+      "name": "ขอความช่วยเหลือ",
+      "category": "social",
+      "description": "ขอความช่วยเหลือ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "REQUEST_FAVOR"
+    },
+    {
+      "id": "SOCIALIZE",
+      "name": "พบปะสหาย",
+      "category": "social",
+      "description": "พบปะสหาย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "SOCIALIZE"
+    },
+    {
+      "id": "VISIT_FRIEND",
+      "name": "เยี่ยมสหาย",
+      "category": "social",
+      "description": "เยี่ยมสหาย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "VISIT_FRIEND"
+    },
+    {
+      "id": "VISIT_MASTER",
+      "name": "เยี่ยมอาจารย์",
+      "category": "social",
+      "description": "เยี่ยมอาจารย์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "near_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "social"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "VISIT_MASTER"
+    },
+    {
+      "id": "ESCORT",
+      "name": "คุ้มกันขบวนขนส่ง",
+      "category": "travel",
+      "description": "คุ้มกันขบวนขนส่ง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "ESCORT"
+    },
+    {
+      "id": "EXPLORE",
+      "name": "สำรวจพื้นที่",
+      "category": "travel",
+      "description": "สำรวจพื้นที่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "EXPLORE"
+    },
+    {
+      "id": "FIND_TREASURE",
+      "name": "พบทรัพยากรหรือของตกทอด",
+      "category": "travel",
+      "description": "พบทรัพยากรหรือของตกทอด",
+      "actors": [
+        "sect",
+        "world"
+      ],
+      "requirements": [
+        "resources",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "world"
+    },
+    {
+      "id": "FLEE",
+      "name": "หลบหนีจากภัยหรือการคุมขัง",
+      "category": "travel",
+      "description": "หลบหนีจากภัยหรือการคุมขัง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "FLEE"
+    },
+    {
+      "id": "FOLLOW_TARGET",
+      "name": "ติดตามบุคคลตามเบาะแส",
+      "category": "travel",
+      "description": "ติดตามบุคคลตามเบาะแส",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "known_person"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "FOLLOW_TARGET"
+    },
+    {
+      "id": "HIDE",
+      "name": "หลบซ่อนเพื่อความปลอดภัย",
+      "category": "travel",
+      "description": "หลบซ่อนเพื่อความปลอดภัย",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "HIDE"
+    },
+    {
+      "id": "HUNT",
+      "name": "ออกล่าสัตว์",
+      "category": "travel",
+      "description": "ออกล่าสัตว์",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "HUNT"
+    },
+    {
+      "id": "INFILTRATE",
+      "name": "แทรกซึมฝ่ายศัตรู",
+      "category": "travel",
+      "description": "แทรกซึมฝ่ายศัตรู",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "INFILTRATE"
+    },
+    {
+      "id": "PATROL",
+      "name": "ลาดตระเวนนอกเวร",
+      "category": "travel",
+      "description": "ลาดตระเวนนอกเวร",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "available",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "state_change"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {},
+      "supported": true,
+      "handler": "patrol"
+    },
+    {
+      "id": "RETURN_HOME",
+      "name": "กลับสำนักจากการเดินทาง",
+      "category": "travel",
+      "description": "กลับสำนักจากการเดินทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "RETURN_HOME"
+    },
+    {
+      "id": "SCOUT",
+      "name": "ลาดตระเวนสืบเส้นทาง",
+      "category": "travel",
+      "description": "ลาดตระเวนสืบเส้นทาง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SCOUT"
+    },
+    {
+      "id": "SEARCH",
+      "name": "ค้นทรัพยากร",
+      "category": "travel",
+      "description": "ค้นทรัพยากร",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEARCH"
+    },
+    {
+      "id": "SEARCH_RUINS",
+      "name": "สำรวจซากโบราณ",
+      "category": "travel",
+      "description": "สำรวจซากโบราณ",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "SEARCH_RUINS"
+    },
+    {
+      "id": "SEARCH_TREASURE",
+      "name": "ค้นของตกทอด",
+      "category": "travel",
+      "description": "ค้นของตกทอด",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "SEARCH_TREASURE"
+    },
+    {
+      "id": "STUDY_TREASURE",
+      "name": "ศึกษาของตกทอดที่มีอยู่",
+      "category": "travel",
+      "description": "ศึกษาของตกทอดที่มีอยู่",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 0,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "STUDY_TREASURE"
+    },
+    {
+      "id": "TRAVEL",
+      "name": "เดินทางตามแผน",
+      "category": "travel",
+      "description": "เดินทางตามแผน",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "native_and_contextual",
+      "canonical": "TRAVEL"
+    },
+    {
+      "id": "VISIT_CITY",
+      "name": "ไปเยือนตลาดเมือง",
+      "category": "travel",
+      "description": "ไปเยือนตลาดเมือง",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "VISIT_CITY"
+    },
+    {
+      "id": "VISIT_SECT",
+      "name": "เยือนสำนักอื่น",
+      "category": "travel",
+      "description": "เยือนสำนักอื่น",
+      "actors": [
+        "character"
+      ],
+      "requirements": [
+        "alive",
+        "physical_presence",
+        "context_preconditions",
+        "cooldown",
+        "rule_validation"
+      ],
+      "targets": [
+        "self"
+      ],
+      "duration": 1,
+      "risk": 15,
+      "costs": {},
+      "outcomes": [
+        "paid_state_transition",
+        "memories",
+        "reactions"
+      ],
+      "tags": [
+        "travel"
+      ],
+      "hints": {
+        "context": true,
+        "goal": true,
+        "personality": true
+      },
+      "supported": true,
+      "handler": "civil",
+      "execution": "contextual",
+      "canonical": "VISIT_SECT"
+    }
+  ]
+}
