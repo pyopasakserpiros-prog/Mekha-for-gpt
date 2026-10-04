@@ -1,0 +1,18 @@
+PASS schema2 migration preserves money, owned item, jobs, ID, and RNG
+PASS equipment scoring values a tool for a crafter, healing for a healer and weapon for its arts
+PASS allocation respects locked worn equipment, exclusions, reservation and the daily value budget
+PASS new potions are used automatically once a day; injury and cooldown take priority
+PASS poisoned and incompatible members do not get boost pills; materials fill actual shortages
+PASS biased leader favors bonded member; fair leader follows the player ordering
+PASS community food and medicine transfer consumes real stock; automatic aid protects reserves
+PASS each exploration area uses its own theme; winning exploration guarantees regional material
+PASS crafting makes quality and affixes using real labor and faction craft officers
+PASS management locks preserve job, rank and mentor; faction lives spend own wealth and preserve snapshots
+PASS foreign succession chooses surviving person and exposes it only through dated news
+PASS monthly member summaries and aspirations continue across multiple goals and save reload
+PASS invalid new policy, journal, cargo and member data reject without replacing live state
+PASS rest recovers body strain so automatic workers do not stay resting forever
+PASS automatic successors can work for survival instead of staying locked to teaching
+PASS older saves import into a later running world without borrowing the live world date
+PASS returned cargo preserves affixes and recipes and enters automatic distribution on the arrival day
+PARITY PASS 17

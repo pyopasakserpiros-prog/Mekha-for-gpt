@@ -1,0 +1,1 @@
+LIVING UI PASS 213 renders; 5 interaction flows; focus-safe quantity, atomic drafts, permissions, close, all 800 definitions

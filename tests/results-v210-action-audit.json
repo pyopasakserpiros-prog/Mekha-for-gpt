@@ -1,0 +1,1280 @@
+{
+  "total": 212,
+  "executed": 212,
+  "unexercised": [],
+  "results": [
+    {
+      "id": "REFINE_QI",
+      "name": "ขัดเกลาลมปราณ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ABSORB_SPIRIT_ENERGY",
+      "name": "ดูดซับพลังวิญญาณ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "STUDY_CULTIVATION_MANUAL",
+      "name": "ศึกษาคัมภีร์บ่มเพาะ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CULTIVATE",
+      "name": "บ่มเพาะ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SECLUDED_CULTIVATION",
+      "name": "เก็บตัวบ่มเพาะ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "STABILIZE_REALM",
+      "name": "ปรับขอบเขตให้มั่นคง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PURIFY_QI",
+      "name": "ชำระปราณ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PREPARE_BREAKTHROUGH",
+      "name": "เตรียมฐานรากทะลวง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MEDITATE",
+      "name": "นั่งสมาธิ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SUPPRESS_DEVIATION",
+      "name": "ระงับปราณแตกซ่าน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BREAKTHROUGH_ATTEMPT",
+      "name": "พยายามทะลวงขอบเขต",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEEK_BREAKTHROUGH_RESOURCE",
+      "name": "หาโอสถเตรียมทะลวง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "USE_CULTIVATION_PILL",
+      "name": "ใช้โอสถบ่มเพาะ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TAKE_MEDICINE",
+      "name": "ใช้ยาที่มีอยู่",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "HEAL_INTERNAL_INJURY",
+      "name": "รักษาบาดเจ็บภายใน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TREAT_WOUND",
+      "name": "ทำแผล",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TREAT_POISON",
+      "name": "รักษาพิษ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DETOXIFY",
+      "name": "ขับพิษ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEEK_DOCTOR",
+      "name": "ขอรับการรักษา",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "VISIT_PHYSICIAN",
+      "name": "ไปพบแพทย์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RESTORE_QI",
+      "name": "ฟื้นพลังปราณ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REST",
+      "name": "พักรักษาร่างกาย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RECOVER",
+      "name": "พักฟื้น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CARE_FOR_INJURED",
+      "name": "ดูแลผู้บาดเจ็บ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRACTICE_SWORD",
+      "name": "ฝึกกระบี่",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRACTICE_SABER",
+      "name": "ฝึกดาบ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRACTICE_SPEAR",
+      "name": "ฝึกทวน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRACTICE_FIST",
+      "name": "ฝึกหมัด",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRACTICE_PALM",
+      "name": "ฝึกฝ่ามือ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRACTICE_QINGGONG",
+      "name": "ฝึกวิชาตัวเบา",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRACTICE_HIDDEN_WEAPON",
+      "name": "ฝึกอาวุธลับ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRACTICE_FORMATION",
+      "name": "ฝึกค่ายกล",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TRAIN_MARTIAL_ART",
+      "name": "ฝึกวิชาที่เรียนแล้ว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "COMPREHEND_TECHNIQUE",
+      "name": "ทำความเข้าใจวิชา",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "IMPROVE_TECHNIQUE",
+      "name": "ขัดเกลาวิชา",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "STUDY_TECHNIQUE",
+      "name": "เรียนวิชาจากแหล่งที่เข้าถึง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "IMITATE_TECHNIQUE",
+      "name": "ศึกษาวิชาจากผู้ชำนาญ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "OBSERVE_EXPERT",
+      "name": "สังเกตผู้เชี่ยวชาญ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REQUEST_GUIDANCE",
+      "name": "ขอคำชี้แนะ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CULTIVATION_EXCHANGE",
+      "name": "แลกเปลี่ยนการบ่มเพาะ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "GUIDE_JUNIOR_CULTIVATION",
+      "name": "ชี้แนะผู้เยาว์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TEACH_TECHNIQUE",
+      "name": "ถ่ายทอดวิชา",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TEACH_DISCIPLE",
+      "name": "สอนวิชาแก่ศิษย์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TEACH",
+      "name": "สอนความรู้",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEEK_MASTER",
+      "name": "ขอฝากตัวเป็นศิษย์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "VISIT_MASTER",
+      "name": "เยี่ยมอาจารย์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MAKE_FRIEND",
+      "name": "ทำความรู้จักสหาย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "APOLOGIZE",
+      "name": "ขอโทษ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PRAISE",
+      "name": "ยกย่องผลงาน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ARGUE",
+      "name": "โต้เถียงข้อขัดแย้ง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "INSULT",
+      "name": "ดูหมิ่นคู่ปรับ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "FORM_RIVALRY",
+      "name": "ประกาศเป็นคู่ปรับ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RECRUIT_ALLY",
+      "name": "ขอแรงสนับสนุน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CONFESS_SECRET",
+      "name": "เปิดเผยความลับ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "INTIMIDATE",
+      "name": "ข่มขู่",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MANIPULATE",
+      "name": "ชักจูงเพื่อผลประโยชน์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SOCIALIZE",
+      "name": "พบปะสหาย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "VISIT_FRIEND",
+      "name": "เยี่ยมสหาย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BUILD_TRUST",
+      "name": "ทำงานสร้างความไว้ใจ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REPAIR_RELATIONSHIP",
+      "name": "ปรับความเข้าใจ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REQUEST_FAVOR",
+      "name": "ขอความช่วยเหลือ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ASK_FOR_HELP",
+      "name": "ขอแรงช่วยงาน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "HELP_PERSON",
+      "name": "ช่วยงานผู้อื่น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEEK_INFORMATION",
+      "name": "หาแหล่งข่าว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ASK_ABOUT_PERSON",
+      "name": "สอบถามเรื่องบุคคล",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ASK_ABOUT_LOCATION",
+      "name": "สอบถามเส้นทาง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "INVESTIGATE",
+      "name": "สืบข้อเท็จจริง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "INVESTIGATE_RUMOR",
+      "name": "สืบข่าวลือ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "GOSSIP",
+      "name": "สนทนาข่าวในสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SHARE_INFORMATION",
+      "name": "แบ่งปันข่าว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SPREAD_RUMOR",
+      "name": "ปล่อยข่าวลือ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "HIDE_INFORMATION",
+      "name": "ปกปิดข้อมูล",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SPY_ON_TARGET",
+      "name": "เฝ้าดูเป้าหมาย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "READ",
+      "name": "อ่านตำรับ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "STUDY",
+      "name": "ศึกษาบันทึก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "WRITE_RECORD",
+      "name": "เขียนบันทึกความรู้",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RESEARCH",
+      "name": "ค้นคว้าความรู้",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "EAT",
+      "name": "กินอาหาร",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SLEEP",
+      "name": "นอนพัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RELAX",
+      "name": "พักผ่อน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DRINK",
+      "name": "ดื่มสุราพอประมาณ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ATTEND_EVENT",
+      "name": "ร่วมงานชุมชน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "VISIT_MARKET",
+      "name": "เดินตลาด",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "WANDER",
+      "name": "เดินเล่น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PURSUE_HOBBY",
+      "name": "ทำงานอดิเรก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MANAGE_HOME",
+      "name": "ดูแลที่พัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "VISIT_FAMILY",
+      "name": "เยี่ยมครอบครัว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CARE_FOR_FAMILY",
+      "name": "ดูแลคนในครอบครัว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PROPOSE_MARRIAGE",
+      "name": "ขอสร้างครอบครัว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MARRY",
+      "name": "ยอมรับการสร้างครอบครัว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEEK_REVENGE",
+      "name": "ตั้งใจแก้แค้น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "GIVE_UP_REVENGE",
+      "name": "ละวางการแก้แค้น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "HOLD_GRUDGE",
+      "name": "จดจำความแค้น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BECOME_SUSPICIOUS",
+      "name": "เริ่มระแวง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CELEBRATE",
+      "name": "ฉลองความสำเร็จ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "GAIN_CONFIDENCE",
+      "name": "ทบทวนความสำเร็จเพื่อสร้างความมั่นใจ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "LOSE_CONFIDENCE",
+      "name": "ยอมรับความพ่ายแพ้",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEEK_REDEMPTION",
+      "name": "ชดเชยความผิด",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BUY_ITEM",
+      "name": "ซื้อของด้วยเงินส่วนตัว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SELL_ITEM",
+      "name": "ขายของส่วนตัวที่ไม่จำเป็น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BORROW_MONEY",
+      "name": "ขอกู้เงิน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "LEND_MONEY",
+      "name": "ให้กู้เงิน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REPAY_LOAN",
+      "name": "คืนเงินกู้ตามสัญญา",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CRAFT",
+      "name": "ผลิตสิ่งของ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REFINE_PILL",
+      "name": "ปรุงโอสถ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "FORGE_WEAPON",
+      "name": "ตีอาวุธ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REPAIR_EQUIPMENT",
+      "name": "ซ่อมบำรุงอุปกรณ์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "GATHER_HERBS",
+      "name": "เก็บสมุนไพร",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MINE_ORE",
+      "name": "ขุดแร่",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "HARVEST_RESOURCE",
+      "name": "เก็บทรัพยากรจากแหล่ง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "WORK",
+      "name": "รับหน้าที่งานประจำ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "EARN_MONEY",
+      "name": "ทำงานรับค่าจ้าง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MANAGE_SHOP",
+      "name": "ดูแลกิจการร้านค้า",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SAVE_MONEY",
+      "name": "จัดแผนเงินเก็บ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TRADE",
+      "name": "ส่งสินค้าแลกเงินระหว่างสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BARTER",
+      "name": "แลกทรัพยากรกับอีกสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DONATE_RESOURCES",
+      "name": "มอบทรัพยากรช่วยสำนักอื่น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DISTRIBUTE_RESOURCES",
+      "name": "จัดทรัพยากรสนับสนุนสมาชิก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "STEAL",
+      "name": "ลักทรัพย์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ROB",
+      "name": "ปล้นทรัพย์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SMUGGLE",
+      "name": "ลักลอบส่งสินค้า",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MANAGE_RESOURCES",
+      "name": "ตรวจคลังและกำหนดความจำเป็น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BUY_RESOURCES",
+      "name": "ซื้อวัตถุดิบจากตลาดจำกัด",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BUILD_FACILITY",
+      "name": "ก่อสร้างสถานที่",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "EXPAND_SECT",
+      "name": "ขยายความจุสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REPAIR_FACILITY",
+      "name": "ซ่อมสิ่งก่อสร้างเสียหาย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DISTRIBUTE_EQUIPMENT",
+      "name": "จัดอุปกรณ์จากคลังให้สมาชิก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DISTRIBUTE_MEDICINE",
+      "name": "จัดยารักษาตามอาการ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SECT_TRAINING",
+      "name": "จัดการฝึกหมู่ของสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ASSIGN_MISSION",
+      "name": "มอบหมายภารกิจ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SECT_MISSION",
+      "name": "รับภารกิจสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RESEARCH_TECHNIQUE",
+      "name": "ค้นคว้าตำรับวิชาสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CREATE_TECHNIQUE",
+      "name": "สร้างแขนงวิชาส่วนตัว",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RECRUIT_DISCIPLE",
+      "name": "รับบุคคลจากประชากรเข้าสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PROMOTE_MEMBER",
+      "name": "เลื่อนตำแหน่งสมาชิก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DEMOTE_MEMBER",
+      "name": "ลดตำแหน่งสมาชิก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REWARD_MEMBER",
+      "name": "ให้รางวัลสมาชิก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PUNISH_MEMBER",
+      "name": "ลงโทษตามหลักฐาน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "LEAVE_SECT",
+      "name": "ลาออกไปหาสำนักที่เหมาะสม",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "JOIN_SECT",
+      "name": "ขอเข้าร่วมสำนักอื่น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "FILE_PETITION",
+      "name": "ยื่นข้อร้องเรียนต่อสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REQUEST_RESOURCES",
+      "name": "ขอทรัพยากรตามความจำเป็น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RESOLVE_GRIEVANCE",
+      "name": "ตรวจและแก้ข้อร้องเรียน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "FORM_INTERNAL_FACTION",
+      "name": "รวมกลุ่มเสนอแนวทางสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SUPPORT_CANDIDATE",
+      "name": "สนับสนุนผู้นำหรือผู้ท้าชิง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "OPPOSE_CANDIDATE",
+      "name": "คัดค้านผู้ท้าชิง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "WITHDRAW_SUPPORT",
+      "name": "ถอนการสนับสนุน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CHALLENGE_AUTHORITY",
+      "name": "ยื่นท้าทายความชอบธรรมเจ้าสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "VOTE_NO_CONFIDENCE",
+      "name": "เสนอญัตติไม่ไว้วางใจ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "COUP",
+      "name": "ชิงอำนาจด้วยกำลังของกลุ่มสนับสนุน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ABDICATE",
+      "name": "สละตำแหน่งเพื่อยุติวิกฤต",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "INVESTIGATE_MEMBER",
+      "name": "สอบสวนสมาชิกตามหลักฐาน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "HOLD_MEETING",
+      "name": "ประชุมสภาสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DISCUSS_POLICY",
+      "name": "เสนอแก้แนวทางบริหาร",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CHANGE_POLICY",
+      "name": "ปรับนโยบายตามปัญหาสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "FORM_ALLIANCE",
+      "name": "ทำพันธมิตร",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BREAK_ALLIANCE",
+      "name": "ยุติพันธมิตร",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DECLARE_HOSTILITY",
+      "name": "ประกาศเป็นศัตรู",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DECLARE_WAR",
+      "name": "ประกาศสงคราม",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEEK_PEACE",
+      "name": "เจรจาสงบศึก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "OFFER_TRIBUTE",
+      "name": "เสนอเครื่องบรรณาการ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DEMAND_TRIBUTE",
+      "name": "เรียกบรรณาการ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEND_ENVOY",
+      "name": "ส่งทูต",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "NEGOTIATE",
+      "name": "เจรจาผลประโยชน์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SPY",
+      "name": "ส่งสายสืบ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "BRIBE",
+      "name": "ติดสินบนผู้แทน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "THREATEN",
+      "name": "ข่มขู่ฝ่ายอื่น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "MEDDLE",
+      "name": "แทรกแซงการเมือง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SUPPORT_FACTION",
+      "name": "ให้ทุนฝ่ายที่สนับสนุน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "UNDERMINE_FACTION",
+      "name": "บ่อนทำลายความชอบธรรมฝ่ายอื่น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TRADE_EMBARGO",
+      "name": "ปิดการค้ากับฝ่ายศัตรู",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "COUNTER_SPY",
+      "name": "ตรวจจับสายสืบและคุ้มครองข้อมูล",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "TRAVEL",
+      "name": "เดินทางตามแผน",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "VISIT_CITY",
+      "name": "ไปเยือนตลาดเมือง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "VISIT_SECT",
+      "name": "เยือนสำนักอื่น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "EXPLORE",
+      "name": "สำรวจพื้นที่",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SCOUT",
+      "name": "ลาดตระเวนสืบเส้นทาง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "HUNT",
+      "name": "ออกล่าสัตว์",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEARCH",
+      "name": "ค้นทรัพยากร",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEARCH_RUINS",
+      "name": "สำรวจซากโบราณ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SEARCH_TREASURE",
+      "name": "ค้นของตกทอด",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "INFILTRATE",
+      "name": "แทรกซึมฝ่ายศัตรู",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RETURN_HOME",
+      "name": "กลับสำนักจากการเดินทาง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "FOLLOW_TARGET",
+      "name": "ติดตามบุคคลตามเบาะแส",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "HIDE",
+      "name": "หลบซ่อนเพื่อความปลอดภัย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "FLEE",
+      "name": "หลบหนีจากภัยหรือการคุมขัง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ESCORT",
+      "name": "คุ้มกันขบวนขนส่ง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "STUDY_TREASURE",
+      "name": "ศึกษาของตกทอดที่มีอยู่",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DUEL",
+      "name": "ประลองตามคำท้า",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ATTACK",
+      "name": "โจมตีศัตรู",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DEFEND",
+      "name": "ตั้งรับศัตรู",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "AMBUSH",
+      "name": "ซุ่มโจมตี",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RETREAT",
+      "name": "ถอนตัวจากการเผชิญหน้า",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CHASE",
+      "name": "ไล่ตามศัตรู",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ASSASSINATE",
+      "name": "ลอบสังหาร",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DUEL_TO_DEATH",
+      "name": "ประลองเป็นตาย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CAPTURE",
+      "name": "จับศัตรูที่บาดเจ็บเป็นเชลย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "EXECUTE",
+      "name": "ตัดสินประหารเชลย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SPARE",
+      "name": "ไว้ชีวิตและปล่อยเชลย",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RESCUE",
+      "name": "ช่วยผู้ถูกจับกลับสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "PROTECT",
+      "name": "คุ้มครองคนที่กำลังถูกคุกคาม",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "LOOT",
+      "name": "เก็บของจากฝ่ายที่พ่ายแพ้",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "RAID",
+      "name": "ส่งกำลังบุกปล้น",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SIEGE",
+      "name": "ส่งกำลังล้อมสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "ATTACK_SECT",
+      "name": "ส่งกำลังโจมตีสำนัก",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "SABOTAGE",
+      "name": "ส่งกำลังทำลายสิ่งก่อสร้าง",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "DEFEND_RESOURCE_SITE",
+      "name": "เสริมการป้องกันแหล่งทรัพยากร",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CLAIM_TERRITORY",
+      "name": "เข้าควบคุมแหล่งไร้เจ้าของ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CONTEST_TERRITORY",
+      "name": "ยกกำลังแย่งชิงพื้นที่",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "CAPTURE_RESOURCE_SITE",
+      "name": "ยึดพื้นที่จากผู้ควบคุม",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "GIVE_GIFT",
+      "name": "มอบเงินส่วนตัวเป็นของขวัญ",
+      "executed": true,
+      "error": null
+    },
+    {
+      "id": "REQUEST_DUTY_CHANGE",
+      "name": "ขอเปลี่ยนหน้าที่ให้เหมาะกับตน",
+      "executed": true,
+      "error": null
+    }
+  ],
+  "note": "Prepared states exercise legality and concrete state transitions; not a natural frequency or balance test. Dedicated scenarios verify conservation, delayed effects and consequences."
+}

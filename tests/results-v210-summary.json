@@ -1,0 +1,20 @@
+{
+  "version": "2.1.0",
+  "schema": 8,
+  "registry": 236,
+  "originalRegistry": 220,
+  "contextualActions": 212,
+  "contextualActionsExercised": 212,
+  "scenarioGroups": 27,
+  "regressionScripts": 22,
+  "longRunWorlds": 8,
+  "totalSimulatedDays": 7200,
+  "finalExportSchemaWorlds": [
+    74,
+    2027
+  ],
+  "physicalAndroidTested": false,
+  "realBrowserStatus": "blocked",
+  "modelsTrained": false,
+  "pretrainedModelsIntegrated": false
+}

@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "status": "blocked",
+  "reason": "No installed Chromium; Playwright browser download was blocked by network policy (403).",
+  "domStubPassed": true,
+  "physicalAndroidTested": false
+}

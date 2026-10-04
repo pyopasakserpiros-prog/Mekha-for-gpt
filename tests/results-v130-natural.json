@@ -1,0 +1,24 @@
+[
+  {
+    "seed": 7,
+    "days": 7200,
+    "alive": 18,
+    "over": false,
+    "seconds": 31.62,
+    "evaluations": 1041780,
+    "actions": 126262,
+    "food": 471,
+    "silver": 519
+  },
+  {
+    "seed": 17,
+    "days": 7200,
+    "alive": 18,
+    "over": false,
+    "seconds": 31.1,
+    "evaluations": 1018931,
+    "actions": 126367,
+    "food": 464,
+    "silver": 513
+  }
+]

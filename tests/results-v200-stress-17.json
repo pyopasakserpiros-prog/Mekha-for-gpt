@@ -1,0 +1,235 @@
+{
+  "seed": 17,
+  "days": 3600,
+  "seconds": 257.07,
+  "alive": 18,
+  "over": false,
+  "metrics": {
+    "decisions": 353804,
+    "candidates": 16323013,
+    "success": 317698,
+    "rejected": 36106,
+    "goalsCompleted": 20874,
+    "goalsFailed": 926,
+    "rumors": 48817,
+    "transfers": 300
+  },
+  "maxSaveBytes": 9021922,
+  "maxLocalBytes": 2127278,
+  "maxMemory": 48,
+  "maxKnowledge": 32,
+  "tickMedianMs": 62.59,
+  "tickP95Ms": 99.39,
+  "milestones": [
+    {
+      "day": 30,
+      "alive": 11,
+      "saveBytes": 1704576,
+      "localBytes": 415804,
+      "activeImportant": 17,
+      "reportedPeople": 17,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 180,
+      "alive": 14,
+      "saveBytes": 3039896,
+      "localBytes": 734108,
+      "activeImportant": 20,
+      "reportedPeople": 20,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 360,
+      "alive": 18,
+      "saveBytes": 4013952,
+      "localBytes": 913914,
+      "activeImportant": 24,
+      "reportedPeople": 24,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 540,
+      "alive": 18,
+      "saveBytes": 4246508,
+      "localBytes": 972646,
+      "activeImportant": 24,
+      "reportedPeople": 24,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 720,
+      "alive": 18,
+      "saveBytes": 4724322,
+      "localBytes": 1089512,
+      "activeImportant": 24,
+      "reportedPeople": 24,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 900,
+      "alive": 18,
+      "saveBytes": 5242515,
+      "localBytes": 1217004,
+      "activeImportant": 35,
+      "reportedPeople": 35,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 1080,
+      "alive": 18,
+      "saveBytes": 5509571,
+      "localBytes": 1260682,
+      "activeImportant": 35,
+      "reportedPeople": 35,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 1260,
+      "alive": 18,
+      "saveBytes": 5038291,
+      "localBytes": 1199118,
+      "activeImportant": 38,
+      "reportedPeople": 46,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 1440,
+      "alive": 18,
+      "saveBytes": 5443894,
+      "localBytes": 1287856,
+      "activeImportant": 46,
+      "reportedPeople": 46,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 1620,
+      "alive": 18,
+      "saveBytes": 6406887,
+      "localBytes": 1467204,
+      "activeImportant": 46,
+      "reportedPeople": 46,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 1800,
+      "alive": 18,
+      "saveBytes": 6497321,
+      "localBytes": 1478310,
+      "activeImportant": 46,
+      "reportedPeople": 46,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 1980,
+      "alive": 18,
+      "saveBytes": 6924127,
+      "localBytes": 1605456,
+      "activeImportant": 57,
+      "reportedPeople": 57,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 2160,
+      "alive": 18,
+      "saveBytes": 7126593,
+      "localBytes": 1631418,
+      "activeImportant": 57,
+      "reportedPeople": 57,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 2340,
+      "alive": 18,
+      "saveBytes": 7208257,
+      "localBytes": 1662078,
+      "activeImportant": 57,
+      "reportedPeople": 57,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 2520,
+      "alive": 18,
+      "saveBytes": 7402732,
+      "localBytes": 1728246,
+      "activeImportant": 68,
+      "reportedPeople": 76,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 2700,
+      "alive": 18,
+      "saveBytes": 8016861,
+      "localBytes": 1886354,
+      "activeImportant": 76,
+      "reportedPeople": 76,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 2880,
+      "alive": 18,
+      "saveBytes": 8260987,
+      "localBytes": 1951770,
+      "activeImportant": 76,
+      "reportedPeople": 76,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 3060,
+      "alive": 18,
+      "saveBytes": 8300790,
+      "localBytes": 1952996,
+      "activeImportant": 76,
+      "reportedPeople": 76,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 3240,
+      "alive": 18,
+      "saveBytes": 8739224,
+      "localBytes": 2050394,
+      "activeImportant": 80,
+      "reportedPeople": 80,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 3420,
+      "alive": 18,
+      "saveBytes": 8906541,
+      "localBytes": 2106578,
+      "activeImportant": 80,
+      "reportedPeople": 80,
+      "routeSafety": 0.78,
+      "wars": 0
+    },
+    {
+      "day": 3600,
+      "alive": 18,
+      "saveBytes": 9021922,
+      "localBytes": 2127278,
+      "activeImportant": 80,
+      "reportedPeople": 80,
+      "routeSafety": 0.78,
+      "wars": 0
+    }
+  ]
+}

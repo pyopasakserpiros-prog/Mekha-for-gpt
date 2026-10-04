@@ -1,0 +1,26 @@
+PASS 800 definitions: 114 art and 24 cultivation scrolls
+PASS new sect contains only its 12 founding art records
+PASS discovery creates saleable inventory, never opens teaching
+PASS copy approval spends real scroll and material, work opens teaching
+PASS rank access and explicit person access, preserving prerequisites
+PASS locked scroll and duplicate copy rejected without spending
+PASS copy cancel returns scroll, never opens art
+PASS copy advances during daily simulation with authored activity records
+PASS manual physical scroll respects exact ranks and named people
+PASS knowledge-holder can transcribe a physical scroll over days
+PASS every person has varied real side activities in one month
+PASS pair action uses at most one secondary slot per member/day
+PASS simulation off prevents side effects; existing primary work continues
+PASS training/labor have actual time opportunity cost
+PASS scarcity and social personality change candidate utilities
+PASS research and maintenance spend actual stock
+PASS leader away falls back to deputy and succession has transition cost
+PASS all 4 new offices are functional and preserve one holder per post
+PASS law officer mediates with measurable fair vs biased result
+PASS foreign people have causal side histories and finite budgets
+PASS money injection enables real investment compared with low stock
+PASS editor draft validation is atomic and can change personality/realm
+PASS migration from real 1.2 preserves knowledge policies and stock
+PASS reject malformed new life fields without changing current game
+PASS save/resume reproduces every decision and event exactly
+LIVING 25 groups passed

@@ -1,0 +1,5 @@
+PASS income staffing forecasts real upkeep
+PASS scarcity changes staffing while preserving player fixed jobs
+PASS investment preserves fourteen days of actual upkeep
+PASS construction considers defenses before optional expansion
+MANAGEMENT 4 groups passed

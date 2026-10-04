@@ -1,0 +1,106 @@
+TEST suite — exit 0
+ALL PASS 26
+
+TEST patch — exit 0
+PASS exact content counts and references
+PASS stack exact properties; split equip; compare real effects; owned transfer
+PASS all 630 craftable definitions execute through paid labor queue
+PASS craft labor partition, cancellation and material refinement
+PASS all twelve pill effects and cooldowns consume actual stock
+PASS all 114 arts: compatible cultivation, paid study, mastery and activation
+PASS teacher availability pauses study; teacher death preserves taught notes
+PASS fixed legendary applicants: 24 unique identities, signatures and life history
+PASS all 60 stories have real eligible triggers and complete safe branches
+PASS three-stage trial resolves actual combat with persistent injury and resources
+PASS mount speed changes time, not explorer realms; actual cargo only after return
+PASS faith finite attention, reserves and decline driven by real community failure
+PASS foreign detail expansion conserves all budgets, identities survive and deaths archived
+PASS appointed heir, elders, actual leadership effects and reference cleanup
+PASS old Sonnet schema1 migration grants no resources/person/items and consumes no RNG
+PASS adversarial saves reject before replacing current world
+PASS mid-story + mid-learning + queued crafts save RNG continuity
+PASS async advance matches 180 daily steps exactly
+PASS cooperative stop at a completed day boundary
+ALL PATCH PASS 19
+
+TEST parity — exit 0
+PASS schema2 migration preserves money, owned item, jobs, ID, and RNG
+PASS equipment scoring values a tool for a crafter, healing for a healer and weapon for its arts
+PASS allocation respects locked worn equipment, exclusions, reservation and the daily value budget
+PASS new potions are used automatically once a day; injury and cooldown take priority
+PASS poisoned and incompatible members do not get boost pills; materials fill actual shortages
+PASS biased leader favors bonded member; fair leader follows the player ordering
+PASS community food and medicine transfer consumes real stock; automatic aid protects reserves
+PASS each exploration area uses its own theme; winning exploration guarantees regional material
+PASS crafting makes quality and affixes using real labor and faction craft officers
+PASS management locks preserve job, rank and mentor; faction lives spend own wealth and preserve snapshots
+PASS foreign succession chooses surviving person and exposes it only through dated news
+PASS monthly member summaries and aspirations continue across multiple goals and save reload
+PASS invalid new policy, journal, cargo and member data reject without replacing live state
+PASS rest recovers body strain so automatic workers do not stay resting forever
+PASS automatic successors can work for survival instead of staying locked to teaching
+PASS older saves import into a later running world without borrowing the live world date
+PASS returned cargo preserves affixes and recipes and enters automatic distribution on the arrival day
+PARITY PASS 17
+
+TEST living — exit 0
+PASS 800 definitions: 114 art and 24 cultivation scrolls
+PASS new sect contains only its 12 founding art records
+PASS discovery creates saleable inventory, never opens teaching
+PASS copy approval spends real scroll and material, work opens teaching
+PASS rank access and explicit person access, preserving prerequisites
+PASS locked scroll and duplicate copy rejected without spending
+PASS copy cancel returns scroll, never opens art
+PASS copy advances during daily simulation with authored activity records
+PASS manual physical scroll respects exact ranks and named people
+PASS knowledge-holder can transcribe a physical scroll over days
+PASS every person has varied real side activities in one month
+PASS pair action uses at most one secondary slot per member/day
+PASS simulation off prevents side effects; existing primary work continues
+PASS training/labor have actual time opportunity cost
+PASS scarcity and social personality change candidate utilities
+PASS research and maintenance spend actual stock
+PASS leader away falls back to deputy and succession has transition cost
+PASS all 4 new offices are functional and preserve one holder per post
+PASS law officer mediates with measurable fair vs biased result
+PASS foreign people have causal side histories and finite budgets
+PASS money injection enables real investment compared with low stock
+PASS editor draft validation is atomic and can change personality/realm
+SKIP 1.2 migration (bundle not in this workspace)
+PASS migration from real 1.2 preserves knowledge policies and stock
+PASS reject malformed new life fields without changing current game
+PASS save/resume reproduces every decision and event exactly
+LIVING 26 groups passed
+
+TEST living-deep — exit 1
+PASS people use several time slots and do not repeat the same act every day
+PASS duty and personality both change the daily agenda
+PASS leader style changes who receives leftover gear
+PASS scholar leader spends a found scroll into a real copy job
+PASS cautious leader does not dump the reserve on vanity projects
+PASS spawned medicine is used on an actually hurt member
+PASS schema 4 save migrates to 6 without extra stock
+PASS foreign daily lives stay inside finite wealth and history
+PASS save resume stays deterministic after deep days
+DEEP 9 groups passed
+FAIL new games are schema 6 with deep life flags AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+'2.0.0' !== '1.4.0'
+
+    at /workspace/scratch/109948d29491/work/MeKha_v2.0.0/tests/living-deep.js:3:99
+    at test (/workspace/scratch/109948d29491/work/MeKha_v2.0.0/tests/living-deep.js:1:129)
+    at Object.<anonymous> (/workspace/scratch/109948d29491/work/MeKha_v2.0.0/tests/living-deep.js:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '2.0.0',
+  expected: '1.4.0',
+  operator: 'strictEqual',
+  diff: 'simple'
+}

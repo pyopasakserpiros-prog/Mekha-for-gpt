@@ -1,0 +1,21 @@
+PASS schema and canonical action registry
+PASS needs and goals derive from actual injury poverty and ambition
+PASS plan advances only on executed steps and goal success requires real change
+PASS personal currency is transferred from actual paid treasury
+PASS paid stipends credit only the actual allowed stipend portion
+PASS reward money reaches savings once without creating extra money
+PASS medicine purchase consumes real item and respects reserve and flags
+PASS favor repayment conserves money and changes debt and trust
+PASS unwitnessed private events are unknown and information spreads with delay
+PASS false or exaggerated claims are corrected from a real source
+PASS legendary gift creates witnessed jealousy and gratitude
+PASS rivalry produces actual duel result memories and recovery need
+PASS death returns private savings and removes live relationship references
+PASS war disrupts routes and raises actual medicine market price
+PASS foreign windfall is spent on real healing and production
+PASS travel requires known verified location, food and explicit autonomy
+PASS quality changes affect frequency and bounded state
+PASS debug traces show real candidates scores and changes
+PASS malformed world saves reject atomically
+PASS resume preserves all decision chains and random state exactly
+WORLD 2.0 PASS 20 groups

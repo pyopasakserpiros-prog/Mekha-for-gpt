@@ -1,0 +1,28 @@
+PASS all original vocabulary has concrete contextual, native or outcome routes
+PASS unknown, dead, unaffordable, absent and unauthorized actions are rejected
+PASS loans conserve both wallets, mark default once and can be repaid after default
+PASS foreign actors use paid medicine and real item ownership and power
+PASS foreign crafting spends materials immediately and delivers only after labor
+PASS foreign study spends time and unlocks actual learned arts and mastery
+PASS caravan escrow conserves total silver and stock before and after delivery
+PASS caravan loss transfers actual cargo to bandits and returns escrow
+PASS physical journeys consume supplies, return and restore prior duty
+PASS travellers can return or flee; visitors can meet known foreign people
+PASS captives stop normal activities and can escape using actual guard strength
+PASS complaints pay compensation and reduce actual grievance
+PASS player elder challenge follows supporters and council vote
+PASS foreign elder challenge follows supporters and council vote
+PASS a funded audit resolves a crisis without removing the leader
+PASS coup requires refusal, severe legitimacy crisis and supporters; injuries persist
+PASS adult mutual marriage and family care respect real relationships
+PASS nonlethal duel cannot randomly kill either participant
+PASS bilateral wars and peace update native diplomacy and disrupt routes
+PASS observational capture stores pre-action alternatives and real horizons
+PASS schema-8 malformed fields and inventories reject atomically
+PASS official actual 2.0 save migrates without changing RNG, assets or identities
+PASS dissolved sects cannot receive new transfers and their parcels are refunded
+PASS a coup counts the challenger power once rather than twice
+PASS new canonical IDs and structured plans are validated
+PASS historical sect snapshots do not duplicate living AI brains
+PASS save-resume remains deterministic with new actions and training enabled
+CIVIL 2.1 PASS 27 scenario groups; 22 actions with direct assertions

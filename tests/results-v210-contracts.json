@@ -1,0 +1,30 @@
+{
+  "passed": 27,
+  "covered": [
+    "BORROW_MONEY",
+    "CARE_FOR_FAMILY",
+    "CHALLENGE_AUTHORITY",
+    "COUP",
+    "CRAFT",
+    "DECLARE_WAR",
+    "FILE_PETITION",
+    "FLEE",
+    "MAKE_FRIEND",
+    "MARRY",
+    "OFFER_TRIBUTE",
+    "PROPOSE_MARRIAGE",
+    "REPAY_LOAN",
+    "RESOLVE_GRIEVANCE",
+    "REST",
+    "RETURN_HOME",
+    "STUDY_TECHNIQUE",
+    "TAKE_MEDICINE",
+    "TRAIN_MARTIAL_ART",
+    "VISIT_CITY",
+    "VISIT_FAMILY",
+    "VOTE_NO_CONFIDENCE"
+  ],
+  "registry": 236,
+  "contextual": 212,
+  "note": "Coverage lists actions exercised by explicit assertions; this is not proof every action is selected in natural play."
+}

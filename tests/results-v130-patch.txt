@@ -1,0 +1,20 @@
+PASS exact content counts and references
+PASS stack exact properties; split equip; compare real effects; owned transfer
+PASS all 630 craftable definitions execute through paid labor queue
+PASS craft labor partition, cancellation and material refinement
+PASS all twelve pill effects and cooldowns consume actual stock
+PASS all 114 arts: compatible cultivation, paid study, mastery and activation
+PASS teacher availability pauses study; teacher death preserves taught notes
+PASS fixed legendary applicants: 24 unique identities, signatures and life history
+PASS all 60 stories have real eligible triggers and complete safe branches
+PASS three-stage trial resolves actual combat with persistent injury and resources
+PASS mount speed changes time, not explorer realms; actual cargo only after return
+PASS faith finite attention, reserves and decline driven by real community failure
+PASS foreign detail expansion conserves all budgets, identities survive and deaths archived
+PASS appointed heir, elders, actual leadership effects and reference cleanup
+PASS old Sonnet schema1 migration grants no resources/person/items and consumes no RNG
+PASS adversarial saves reject before replacing current world
+PASS mid-story + mid-learning + queued crafts save RNG continuity
+PASS async advance matches 180 daily steps exactly
+PASS cooperative stop at a completed day boundary
+ALL PATCH PASS 19
